@@ -10,20 +10,174 @@
 </head>
 
 <body>
+
     <header>
-        <a href="#" class="brand">placeholder</a>
+        <!-- <a href="#" class="brand">placeholder</a> -->
+        <img src="/assets/images/placeholder.jpeg" alt="Company Image" width="300" height="100">
         <div class="menu-btn"></div>
 
         <div class="navigation">
             <div class='navigation-items'>
-                <a href="#">HOME</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">EXPLORE</a>
-                <a href="#">GALLARY</a>
-                <a href="#">CONTACT</a>
+                <a href="/deep-home.html">Home</a>
+                <a href="/src/html/aboutus.html">About Us</a>   
+                <a href="#">Gallary</a>
+                <a href="#">Contact</a>
+                <a href="/src/html/login2.html">LOGIN</a>
+                <a href="/src/html/register.html">REGISTER</a>
             </div>
         </div>
     </header>
+    
+    <section class="home">
+        <video class="video-slide active" src="/assets/videos/vdo1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/assets/videos/vdo2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/assets/videos/vdo3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/assets/videos/vdo4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/assets/videos/vdo5.mp4" autoplay muted loop></video>
+
+
+        <div class="content active">
+            <h1>Wonderful.<br><span>Island</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Camping.<br><span>Enjoy</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Adventures.<br><span>Off Road</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Road Trip.<br><span>Together</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Feel Nature.<br><span>Relax</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="media-icons">
+            <a aria-label="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <b aria-label="instagram" href="#"><i class="fab fa-instagram"></i></b>
+            <c aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></c>
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+
+    </section>
+
+     <script type="text/javascript">
+        //JS for Navigation menubar 
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        
+    //     JS for Video slider navigation
+    //     const btns = document.querySelectorAll(".nav-btn");
+    //     const slides = document.querySelectorAll(".video-slide");
+    //     const contents = document.querySelectorAll(".content");
+
+    //     let currentSlide = 0;
+
+    //     function sliderNav(manual) {
+    //         btns.forEach((btn) => {
+    //             btn.classList.remove("active");
+    //         });
+
+    //         contents.forEach((content) => {
+    //             content.classList.remove("active");
+    //         });
+            
+    //         btns[manual].classList.add("active");
+    //         slides[manual].classList.add("active");
+    //         contents[manual].classList.add("active");
+    //     }
+
+    //     function autoSlide() {
+    //         currentSlide = (currentSlide + 1) % slides.length;
+    //         sliderNav(currentSlide);
+    //     }
+
+    //     // Set an interval for auto-sliding every 5 seconds (5000 milliseconds)
+    //     const autoSlideInterval = setInterval(autoSlide, 7000);
+
+    //     // Pause auto-slide when a navigation button is click
+    //     btns.forEach((btn, i) => {
+    //         btn.addEventListener("click", () => {
+    //             clearInterval(autoSlideInterval); // Stop auto-slide
+    //             sliderNav(i);
+    //         });
+    //     });
+
+
+
+    //
+        // JS for Video slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+    
+        let currentSlide = 0;
+    
+        function sliderNav(manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+    
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+    
+            btns[manual].classList.add("active");
+            slides[currentSlide].classList.remove("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+    
+            currentSlide = manual;
+        }
+    
+        function autoSlide() {
+            let nextSlide = (currentSlide + 1) % slides.length;
+            sliderNav(nextSlide);
+        }
+    
+        // Set an interval for auto-sliding every 5 seconds (5000 milliseconds)
+        const autoSlideInterval = setInterval(autoSlide, 7000);
+    
+        // Pause auto-slide when a navigation button is clicked
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                clearInterval(autoSlideInterval); // Stop auto-slide
+                sliderNav(i);
+            });
+        });
+    
+        // Restart auto-slide when the last video ends
+        slides[slides.length - 1].addEventListener("ended", () => {
+            autoSlideIsnterval = setInterval(autoSlide, 7000);
+        });
+    </script>
+    
 </body>
 
 </html>
