@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+    background: url("/assets/images/tea.jpeg") no-repeat;
+    background-size: cover; /* Make the background image cover the full screen */
+    background-position: center;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    position: relative;
+    margin: 15px 0;
+    width: 100%;
+    border-bottom: 2px solid #333;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #333;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+    top: -20px;
+    font-size: 0.8em;
+    color: #4CAF50;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 5px;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #5cc05f;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .register {
+        background-size: cover;
+    }
+
+    .form-box {
+        width: 80%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f5f5f5; */
+    background: url(/assets/images/wild1.jpeg) no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    -webkit-backdrop-filter: blur(10px);
+
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .animated-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: fadeInUp 1.5s ease-in-out both;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

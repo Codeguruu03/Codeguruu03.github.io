@@ -1,0 +1,40 @@
+body{
+    background-color: aquamarine;
+    height: 2335px;
+}
+.navbar{
+    background-color: blue;
+    /* margin: 12px; */
+    border-radius: 58px;
+    /* position: fixed; */
+}
+
+.navbar ul{
+    overflow: auto;
+}
+
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 11px 6px;
+}
+
+.navbar li a {
+    padding: 32px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+    color: red;
+}
+
+.navbar input{
+    padding: 3px;
+    margin-top: 7px;
+    float: right;
+    width: 206px;
+    border-radius: 6px;
+    padding-right : 26px;
+    margin-right : 42px;
+}
