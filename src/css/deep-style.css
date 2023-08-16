@@ -160,58 +160,28 @@ section{
     transition: 0.3s ease;
 }
 
-.home .media-icons b{
-    color: #fff;
-    font-size: 1.6em;
-    transition: 0.3s ease;
-}
-
-.home .media-icons c{
-    color: #fff;
-    font-size: 1.6em;
-    transition: 0.3s ease;
-}
-
-.home .media-icons d{
-    color: #fff;
-    font-size: 1.6em;
-    transition: 0.3s ease;
-}
-
 .home .media-icons a:not(:last-child){
     margin-bottom: 20px;
 }
 
-.home .media-icons b:not(:last-child){
-    margin-bottom: 20px;
-}
-
-.home .media-icons c:not(:last-child){
-    margin-bottom: 20px;
-}
-
-.home .media-icons d:not(:last-child){
-    margin-bottom: 20px;
-}
-
-.home .media-icons a:hover{
+.home .media-icons a:hover[aria-label="facebook"]{
     transform: scale(1.3);
     color: #1877F2;
 }
 
-.home .media-icons b:hover{
+.home .media-icons a:hover[aria-label="instagram"]{
     transform: scale(1.3);
     color: #E4405F;
 }
 
-.home .media-icons c:hover{
+.home .media-icons a:hover[aria-label="Twitter"]{
     transform: scale(1.3);
     color: #1DA1F2;
 }
 
-.home .media-icons d:hover{
+.home .media-icons a:hover[aria-label="gmail"]{
     transform: scale(1.3);
-    color: #f52c2c;
+    color: #ed3f3f;
 }
 
 .home video{
