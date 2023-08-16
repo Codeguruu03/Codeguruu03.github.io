@@ -17,6 +17,7 @@ body {
   background-color: #f0f0f0;
   font-family: "Poppins", sans-serif;
   display: flex;
+  /* font-size: 12px; */
   justify-content: center;
   align-items: center;
 }
@@ -84,6 +85,8 @@ body {
   font-weight: 500;
   line-height: 2rem;
   letter-spacing: 1px;
+  padding-bottom: 15px;
+  justify-content: center;
 }
 
 .content span {
