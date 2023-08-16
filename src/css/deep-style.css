@@ -50,7 +50,7 @@ header .navigation .navigation-items a{
     margin-left: 30px;
     transition: 0.3s ease;
 }
-
+ 
 header.navigation.navigation-items a:before{
     /* content: 'abcd'; */
     position: absolute;
@@ -70,6 +70,7 @@ header .navigation .navigation-items a:hover {
     font-size: 1.1em; /* Increase font size on hover */
     color: #ec154e; /* Change color on hover */
     text-decoration: underline;
+    font-size: 1.6rem;
     transition: 3 ease;
 }
 
