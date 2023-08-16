@@ -6,12 +6,12 @@
 
 .register {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     min-height: 100vh;
     width: 100%;
     /* background-color: #f1f1f1; */
-    background: url("/assets/images/tea.jpeg") no-repeat;
+    background: url("/assets/images/northeast-history.jpg") no-repeat;
     background-size: cover; /* Make the background image cover the full screen */
     background-position: center;
 }
