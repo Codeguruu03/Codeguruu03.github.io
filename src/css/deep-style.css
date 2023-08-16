@@ -253,36 +253,6 @@ section{
     transition-property: clip-path;
 }
 
-/* ... Your existing CSS ... */
-
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-  }
-  
-  .video-slide {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease;
-  }
-  
-  .video-slide.active {
-    opacity: 1;
-  }
-  
-  /* ... Rest of your existing CSS ... */
-  
     
 @media (max-width:1040px){
     header{
@@ -324,7 +294,7 @@ section{
         transition: 0.3s ease;
     }
 
-    header .navigation.active .navigation-items a {
+    header .navigation.active .navigation-items a{
         color: #222;
         font-size: 1.2em;
         margin: 20px;
