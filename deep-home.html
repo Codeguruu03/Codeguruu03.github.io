@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<title>Travels & Tourism</title>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./src/css/deep-style.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+</head>
+
+<body>
+
+    <header>
+        <!-- <a href="#" class="brand">placeholder</a> -->
+        <img src="/assets/images/placeholder.jpeg" alt="Company Image" width="300" height="100">
+        <div class="menu-btn"></div>
+
+        <div class="navigation">
+            
+            <div class='navigation-items'>
+                <div class="dropdown">
+                <a href="/index.html">Home</a>
+                <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <!-- Add more options as needed -->
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <a href="/src/html/aboutus.html">About Us</a>
+                <div class="dropdown-content">
+                    <a href="www.facebook.com">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <!-- Add more options as needed -->
+                </div>
+            </div>
+    
+                <a href="/src/html/gallery.html">Gallary</a>
+                <a href="#">Experience</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="video-container">
+            <video class="video-slide active" src="/assets/videos/vdo1.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="/assets/videos/vdo2.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="/assets/videos/vdo3.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="/assets/videos/vdo4.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="/assets/videos/vdo6.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="content active">
+            <h1>Wonderful.<br><span>Island</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Camping.<br><span>Enjoy</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Adventures.<br><span>Off Road</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Road Trip.<br><span>Together</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="content">
+            <h1>Feel Nature.<br><span>Relax</span></h1>
+            <p>---TEXT---</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="media-icons">
+            <a aria-label="facebook" href="https://www.facebook.com/profile.php?id=61550314592812ss" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a aria-label="instagram" href="https://www.instagram.com/travelbuddy_1508/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a aria-label="Twitter" href="https://twitter.com/travel_buddy15?s=20" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a aria-label="gmail" href="mailto:travelbuddy1508@gmail.com" target="_blank" rel="noopener"><i class="fab fa-google-plus-square"></i></a>
+        </div>
+        
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+    
+    <section class="aboutindia">
+    <div class="aboutindia1">
+        <h1>About India </h1>
+    </div>
+    
+    <div class="aboutindia2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur dolore in quam alias, illo magnam aspernatur harum eveniet, similique soluta est molestiae modi, qui sunt blanditiis numquam eius. Eos, adipisci ea voluptates sequi laborum possimus natus impedit deleniti, molestias voluptatem labore fugiat dicta eligendi porro accusamus, praesentium reprehenderit facere? Sequi.
+        </p>
+    </div>
+    </section>
+
+
+    <script type="text/javascript">
+        //JS for Navigation menubar 
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+        
+        // JS for Video slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        let currentSlide = 0;
+
+        function sliderNav(manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[currentSlide].classList.remove("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+
+            currentSlide = manual;
+        }
+
+        function autoSlide() {
+            let nextSlide = (currentSlide + 1) % slides.length;
+            sliderNav(nextSlide);
+        }
+
+        // Set an interval for auto-sliding every 5 seconds (5000 milliseconds)
+        const autoSlideInterval = setInterval(autoSlide, 7000);
+
+        // Pause auto-slide when a navigation button is clicked
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                clearInterval(autoSlideInterval); // Stop auto-slide
+                sliderNav(i);
+            });
+        });
+
+        // Restart auto-slide when the last video ends
+        slides[slides.length - 1].addEventListener("ended", () => {
+            autoSlideIsnterval = setInterval(autoSlide, 7000);
+        });
+        // for the scrolling and the parallex effect
+        document.addEventListener("DOMContentLoaded", function () {
+            const videos = document.querySelectorAll(".video-slide");
+            const videoContainer = document.querySelector(".video-container");
+            const videoOffset = videoContainer.offsetTop;
+
+            function handleScroll() {
+                const scrollY = window.scrollY;
+                const scrollPercent = (scrollY - videoOffset) / window.innerHeight;
+
+                videos.forEach((video, index) => {
+                    const videoOpacity = Math.max(0, 1 - Math.abs(scrollPercent - index) * 2);
+                    video.style.opacity = videoOpacity;
+                    if (videoOpacity === 1) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", handleScroll);
+        });
+    </script>
+</body>
+</html>

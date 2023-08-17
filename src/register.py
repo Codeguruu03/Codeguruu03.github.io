@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, send_file
 import mysql.connector
 
 app = Flask(__name__)
@@ -34,9 +34,8 @@ def register():
     cursor.close()
     db_connection.close()
 
-    return "Registration successful!"
-    
+    return 'Account registration successful !\n You Can Close This Tab and login from the Hoome Page'
+
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    quit()
+    app.run(debug=True,port=5500)
