@@ -33,6 +33,7 @@ body {
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
+  z-index: 1;
 }
 .wrapper i:active{
   transform: translateY(-50%) scale(0.85);
@@ -75,19 +76,37 @@ body {
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 470px;
+  height: 500px;
   list-style: none;
   background: #d8ba32;
   cursor: pointer;
   padding-bottom: 13px;
   flex-direction: column;
   border-radius: 8px;
+  position: relative;
 }
+
+
+.carousel .card h3 {
+  font-weight: 500;
+  font-size: 1.31rem;
+  margin: 20px 0;
+  color: #930909; /* Adjust text color */
+  position: absolute; /* Position above image */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Add a background color */
+  padding: 6px 12px; /* Add some padding */
+  border-radius: 8px;
+}
+
 .carousel .card .img {
   background: #0c0b0c;
   width: 330px;
   height: 240px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 
 
