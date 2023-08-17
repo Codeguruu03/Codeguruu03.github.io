@@ -311,6 +311,168 @@ section{
     display: block;
 }
 
+/* Rest of your existing CSS styles */
+
+/* Popular packages section */
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto; /* Center the slider */
+  }
+  
+  .wrapper i {
+    /* Styles for navigation icons */
+    top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #be5555;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 1;
+  }
+  
+  .wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Other styles for the carousel */
+    background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card styles */
+  .carousel .card {
+    /* Card styles */
+    scroll-snap-align: start;
+  height: 528px;
+  list-style: none;
+  background: #d8ba32;
+  cursor: pointer;
+  padding-bottom: 13px;
+  flex-direction: column;
+  border-radius: 8px;
+  position: relative;
+  }
+  
+  .carousel .card h3 {
+    /* Styles for card title */
+    font-weight: 500;
+  font-size: 1.31rem;
+  margin: 20px 0;
+  color: #930909; /* Adjust text color */
+  position: absolute; /* Position above image */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Add a background color */
+  padding: 6px 12px; /* Add some padding */
+  border-radius: 8px;
+  }
+  
+  .carousel .card .img {
+    /* Styles for card image container */
+    background: #0c0b0c;
+  width: 330px;
+  height: 240px;
+  border-radius: 50%;
+  margin-top: 10px;
+  }
+  
+  .carousel .card .img img {
+    /* Styles for card image */
+    width: 330px;
+  height: 240px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 4px solid #e11010;
+  }
+  
+  .carousel .card h2 {
+    /* Styles for heading */
+    font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+  }
+  
+  .carousel .card span {
+    /* Styles for subtitle */
+    color: #6A6D78;
+  font-size: 1.31rem;
+  }
+  
+  .carousel .card .icons-grid {
+    /* Styles for icon grid */
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-top: 10px;
+  justify-items: center;
+  align-items: center;
+  /* font-size: 1.2rem;
+  color: #fff; */
+}
+
+.carousel .card .icons-grid i {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .card .para {
+    /* Styles for paragraph */
+    font-size: 25px;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      /* Adjust grid columns for smaller screens */
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      /* Adjust grid columns for even smaller screens */
+      grid-auto-columns: 100%;
+    }
+  }
+  
+
     
 @media (max-width:1040px){
     header{
