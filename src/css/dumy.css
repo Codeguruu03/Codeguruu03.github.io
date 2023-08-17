@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to left top, #031A9A, #8B53FF);
+  background: linear-gradient(to left top, #0929e0, #e42dbac6);
 }
 .wrapper {
   max-width: 1100px;
@@ -28,7 +28,7 @@ body {
   position: absolute;
   text-align: center;
   line-height: 50px;
-  background: #fff;
+  background: #be5555;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
@@ -75,26 +75,28 @@ body {
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  height: 470px;
   list-style: none;
-  background: #fff;
+  background: #d8ba32;
   cursor: pointer;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   flex-direction: column;
   border-radius: 8px;
 }
 .carousel .card .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
+  background: #0c0b0c;
+  width: 330px;
+  height: 240px;
   border-radius: 50%;
 }
+
+
 .card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 330px;
+  height: 240px;
+  border-radius: 12px;
   object-fit: cover;
-  border: 4px solid #fff;
+  border: 4px solid #e11010;
 }
 .carousel .card h2 {
   font-weight: 500;
