@@ -36,7 +36,7 @@ def login():
 
     if user:
         session['username'] = user[1]  # Store username in session
-        return redirect('https://deepesh611.github.io/')  # Redirect to the home page
+        return redirect('https://deepesh611.github.io/deep-home.html')  # Redirect to the home page
     else:
         return "Invalid login credentials. Please try again."
 
