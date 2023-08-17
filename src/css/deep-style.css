@@ -1,6 +1,6 @@
 /* importing fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald&family=Roboto:ital,wght@0,300;1,300&family=Ruwudu:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@500&family=Inter&family=Josefin+Sans:wght@500&family=PT+Serif:ital@1&family=Pacifico&family=Source+Code+Pro&display=swap');
 
 /* header settings */
 *{
@@ -269,7 +269,47 @@ section{
 .dropdown-content a:hover {
     background-color: #000000;
 }
+ /* about india section */
+.aboutindia {
+    font-family: 'Borel', cursive;
+    /* text-align: center; */
+    margin-top: 35px;
+}
 
+.aboutindia1 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.aboutindia2 {
+    margin: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.readmore1 {
+    padding: 10px 20px;
+    background-color: #2696e9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.readmore1:hover {
+    background-color: #cf3389;
+    transform: scale(1.05);
+}
+
+.aboutindia2.active {
+    display: block;
+}
 
     
 @media (max-width:1040px){
