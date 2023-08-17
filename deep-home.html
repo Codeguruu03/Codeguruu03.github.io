@@ -17,17 +17,15 @@
         <div class="menu-btn"></div>
 
         <div class="navigation">
-            
             <div class='navigation-items'>
                 <div class="dropdown">
-                <a href="/index.html">Home</a>
+                <a href="/deep-home.html">Home</a>
                 <div class="dropdown-content">
                     <a href="#">Option 1</a>
                     <a href="#">Option 2</a>
                     <!-- Add more options as needed -->
                 </div>
             </div>
-            
             <div class="dropdown">
                 <a href="/src/html/aboutus.html">About Us</a>
                 <div class="dropdown-content">
@@ -36,7 +34,6 @@
                     <!-- Add more options as needed -->
                 </div>
             </div>
-    
                 <a href="/src/html/gallery.html">Gallary</a>
                 <a href="#">Experience</a>
                 <a href="#">Contact</a>
@@ -57,6 +54,9 @@
             <h1>Wonderful.<br><span>Island</span></h1>
             <p>---TEXT---</p>
             <a href="#" class="btn">Read More</a>
+
+         
+            
         </div>
 
         <div class="content">
@@ -98,18 +98,31 @@
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
         </div>
+
     </section>
-    
+    <!-- About india section  -->
     <section class="aboutindia">
     <div class="aboutindia1">
         <h1>About India </h1>
     </div>
-    
-    <div class="aboutindia2">
+    <div class="aboutindia2" id="aboutIndiaContent">
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur dolore in quam alias, illo magnam aspernatur harum eveniet, similique soluta est molestiae modi, qui sunt blanditiis numquam eius. Eos, adipisci ea voluptates sequi laborum possimus natus impedit deleniti, molestias voluptatem labore fugiat dicta eligendi porro accusamus, praesentium reprehenderit facere? Sequi.
         </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit deserunt dolorem dicta aliquid temporibus vitae a velit sapiente! Laudantium possimus et cupiditate, atque excepturi reiciendis error quia mollitia voluptatem, asperiores perferendis assumenda, placeat doloribus fuga id dignissimos accusantium. Dolor, iure! Cum architecto praesentium quisquam facere explicabo a quod obcaecati necessitatibus. Quidem in sapiente consequatur repellat at voluptates harum deleniti!
+        </p>
     </div>
+    <div class="button-container">
+        <button class="readmore1" onclick="toggleAboutIndiaContent()">Read More..</button>
+    </div>
+    </section>
+
+    <!-- Popular packages section -->
+    <section>
+        <div>
+            <h2>POPULAR PACKAGES</h2>
+        </div>
     </section>
 
 
@@ -122,7 +135,47 @@
             menuBtn.classList.toggle("active");
             navigation.classList.toggle("active");
         });
-        
+
+        //     JS for Video slider navigation
+        //     const btns = document.querySelectorAll(".nav-btn");
+        //     const slides = document.querySelectorAll(".video-slide");
+        //     const contents = document.querySelectorAll(".content");
+
+        //     let currentSlide = 0;
+
+        //     function sliderNav(manual) {
+        //         btns.forEach((btn) => {
+        //             btn.classList.remove("active");
+        //         });
+
+        //         contents.forEach((content) => {
+        //             content.classList.remove("active");
+        //         });
+
+        //         btns[manual].classList.add("active");
+        //         slides[manual].classList.add("active");
+        //         contents[manual].classList.add("active");
+        //     }
+
+        //     function autoSlide() {
+        //         currentSlide = (currentSlide + 1) % slides.length;
+        //         sliderNav(currentSlide);
+        //     }
+
+        //     // Set an interval for auto-sliding every 5 seconds (5000 milliseconds)
+        //     const autoSlideInterval = setInterval(autoSlide, 7000);
+
+        //     // Pause auto-slide when a navigation button is click
+        //     btns.forEach((btn, i) => {
+        //         btn.addEventListener("click", () => {
+        //             clearInterval(autoSlideInterval); // Stop auto-slide
+        //             sliderNav(i);
+        //         });
+        //     });
+
+
+
+        //
         // JS for Video slider navigation
         const btns = document.querySelectorAll(".nav-btn");
         const slides = document.querySelectorAll(".video-slide");
@@ -190,6 +243,14 @@
 
             window.addEventListener("scroll", handleScroll);
         });
+
+        function toggleAboutIndiaContent() {
+        const aboutIndiaContent = document.getElementById("aboutIndiaContent");
+        aboutIndiaContent.classList.toggle("active");
+    }
+
     </script>
+
 </body>
+
 </html>

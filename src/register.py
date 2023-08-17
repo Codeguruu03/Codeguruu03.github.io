@@ -34,7 +34,7 @@ def register():
     cursor.close()
     db_connection.close()
 
-    return 'Account registration successful !\n You Can Close This Tab and login from the Hoome Page'
+    return "Account registration successful !\n You Can Close This Tab and login from the Home Page"
 
 
 if __name__ == '__main__':
