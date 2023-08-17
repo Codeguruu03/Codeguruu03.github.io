@@ -76,7 +76,7 @@ body {
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 500px;
+  height: 528px;
   list-style: none;
   background: #d8ba32;
   cursor: pointer;
@@ -127,6 +127,23 @@ body {
   font-size: 1.31rem;
 }
 
+.carousel .card .icons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-top: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.carousel .card .icons-grid i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.card .para{
+  font-size: 25px;
+}
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
