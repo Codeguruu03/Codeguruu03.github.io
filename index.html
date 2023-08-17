@@ -107,10 +107,16 @@
     <div class="aboutindia1">
         <h1>About India </h1>
     </div>
-    <div class="aboutindia2">
+    <div class="aboutindia2" id="aboutIndiaContent">
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur dolore in quam alias, illo magnam aspernatur harum eveniet, similique soluta est molestiae modi, qui sunt blanditiis numquam eius. Eos, adipisci ea voluptates sequi laborum possimus natus impedit deleniti, molestias voluptatem labore fugiat dicta eligendi porro accusamus, praesentium reprehenderit facere? Sequi.
         </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit deserunt dolorem dicta aliquid temporibus vitae a velit sapiente! Laudantium possimus et cupiditate, atque excepturi reiciendis error quia mollitia voluptatem, asperiores perferendis assumenda, placeat doloribus fuga id dignissimos accusantium. Dolor, iure! Cum architecto praesentium quisquam facere explicabo a quod obcaecati necessitatibus. Quidem in sapiente consequatur repellat at voluptates harum deleniti!
+        </p>
+    </div>
+    <div class="button-container">
+        <button class="readmore1" onclick="toggleAboutIndiaContent()">Read More..</button>
     </div>
     </section>
 
@@ -232,6 +238,11 @@
 
             window.addEventListener("scroll", handleScroll);
         });
+
+        function toggleAboutIndiaContent() {
+        const aboutIndiaContent = document.getElementById("aboutIndiaContent");
+        aboutIndiaContent.classList.toggle("active");
+    }
 
     </script>
 
