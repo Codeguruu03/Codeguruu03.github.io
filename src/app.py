@@ -1,21 +1,42 @@
-from flask import Flask, render_template
-import subprocess
+from flask import Flask, render_template, request
+import mysql.connector
 
 app = Flask(__name__)
 
+# Configuration for MySQL connection
+db_config = {
+    'host': 'localhost',
+    'user': 'root',
+    'password': 'NerdyGamer611',
+    'database': 'travelbuddy'
+}
+
 @app.route('/')
-def home():
-    return render_template('control_panel.html')
+def registration_form():
+    return render_template('registration.html')
 
-@app.route('/start')
-def start_app():
-    result = subprocess.run(['gunicorn', 'app:app'], capture_output=True, text=True)
-    return f"Application started:\n{result.stdout}"
+@app.route('/register', methods=['POST'])
+def register():
+    username = request.form['username']
+    email = request.form['email']
+    password = request.form['password']
 
-@app.route('/stop')
-def stop_app():
-    # Implement your stop logic here
-    return "Application stopped."
+    # Establish MySQL connection
+    db_connection = mysql.connector.connect(**db_config)
+    cursor = db_connection.cursor()
+
+    # Insert data into the database
+    query = "INSERT INTO users (username, email, password) VALUES (%s, %s, %s)"
+    values = (username, email, password)
+    cursor.execute(query, values)
+
+    db_connection.commit()
+    cursor.close()
+    db_connection.close()
+
+    return "Registration successful!"
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
+    quit()
