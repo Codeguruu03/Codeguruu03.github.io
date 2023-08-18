@@ -74,6 +74,29 @@ header .navigation .navigation-items a:hover {
     transition: 3 ease;
 }
 
+header .navigation .navigation-items .login-btn{
+    background-color: white;
+    color: black;
+
+}
+header .navigation .navigation-items .login-btn a{
+    color: black;
+    padding-right: 22px;
+    text-align: center;
+
+}
+
+header .navigation .navigation-items .register-btn{
+    background-color: white;
+    color: black;
+
+}
+header .navigation .navigation-items .register-btn a{
+    color: black;
+    padding-right: 22px;
+    text-align: center;
+    
+}
 section{
     padding: 100px 200px;
 }
