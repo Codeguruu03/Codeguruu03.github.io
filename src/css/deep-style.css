@@ -103,7 +103,11 @@ header .navigation .navigation-items .register-btn a {
 
 }
 
+<<<<<<< HEAD
 section {
+=======
+section{
+>>>>>>> 63dcb0878e552377fc98c21062f74caa72f76b38
     padding: 100px 200px;
 }
 
@@ -407,6 +411,7 @@ section {
 .carousel .card {
     /* Card styles */
     scroll-snap-align: start;
+<<<<<<< HEAD
     height: 528px;
     list-style: none;
     background: #d8ba32;
@@ -422,6 +427,19 @@ section {
 }
 
 .carousel .card h3 {
+=======
+  height: 528px;
+  list-style: none;
+  background: #d8ba32;
+  cursor: pointer;
+  padding-bottom: 13px;
+  flex-direction: column;
+  border-radius: 8px;
+  position: relative;
+  }
+   
+  .carousel .card h3 {
+>>>>>>> 63dcb0878e552377fc98c21062f74caa72f76b38
     /* Styles for card title */
     font-weight: 500;
     font-size: 1.31rem;
