@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@500&family=Inter&family=Josefin+Sans:wght@500&family=PT+Serif:ital@1&family=Pacifico&family=Source+Code+Pro&display=swap');
 
 /* header settings */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,11 +12,12 @@
 
 /* content settings */
 .content.active h1 {
-    font-size: 70px; /* You can adjust the size to your preference */
-  }
+    font-size: 70px;
+    /* You can adjust the size to your preference */
+}
 
-  /* header position */
-header{
+/* header position */
+header {
     z-index: 999;
     position: absolute;
     top: 0;
@@ -29,7 +30,7 @@ header{
     transition: 0.5s ease;
 }
 
-header .brand{
+header .brand {
     color: #fff;
     font-size: 1.5em;
     text-decoration: none;
@@ -37,11 +38,11 @@ header .brand{
 }
 
 /* navigation bar */
-header .navigation{
+header .navigation {
     position: relative;
 }
 
-header .navigation .navigation-items a{
+header .navigation .navigation-items a {
     position: relative;
     color: #fff;
     font-size: 1.3em;
@@ -50,8 +51,8 @@ header .navigation .navigation-items a{
     margin-left: 30px;
     transition: 0.3s ease;
 }
- 
-header.navigation.navigation-items a:before{
+
+header.navigation.navigation-items a:before {
     /* content: 'abcd'; */
     position: absolute;
     background: #fff;
@@ -62,67 +63,72 @@ header.navigation.navigation-items a:before{
     transition: 0.3s ease;
 }
 
-header.navigation.navigation-items a:hover:before{
+header.navigation.navigation-items a:hover:before {
     width: 100%;
 }
 
 header .navigation .navigation-items a:hover {
-    font-size: 1.1em; /* Increase font size on hover */
-    color: #ec154e; /* Change color on hover */
+    font-size: 1.1em;
+    /* Increase font size on hover */
+    color: #ec154e;
+    /* Change color on hover */
     text-decoration: underline;
     font-size: 1.6rem;
     transition: 3 ease;
 }
 
-header .navigation .navigation-items .login-btn{
+header .navigation .navigation-items .login-btn {
     background-color: white;
     color: black;
 
 }
-header .navigation .navigation-items .login-btn a{
+
+header .navigation .navigation-items .login-btn a {
     color: black;
-    padding-right: 22px;
+    padding-right: 30px;
     text-align: center;
 
 }
 
-header .navigation .navigation-items .register-btn{
+header .navigation .navigation-items .register-btn {
     background-color: white;
     color: black;
 
 }
-header .navigation .navigation-items .register-btn a{
+
+header .navigation .navigation-items .register-btn a {
     color: black;
-    padding-right: 22px;
+    padding-right: 28px;
     text-align: center;
-    
+
 }
-section{
+
+section {
     padding: 100px 200px;
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    flex-direction : column;
+    flex-direction: column;
     background: #2696e9;
 }
 
-.home::before{
+.home::before {
     z-index: 777;
     content: '';
     position: absolute;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     left: 0;
 }
 
-.home .content{
+.home .content {
     z-index: 888;
     color: #fff;
     width: 70%;
@@ -130,17 +136,17 @@ section{
     display: none;
 }
 
-.home .content.active{
+.home .content.active {
     display: block;
 }
 
-.home .content.active a:hover{
+.home .content.active a:hover {
     font-size: 1.2em;
     transition: 3 ease;
     color: #ec154e;
 }
 
-.home.content h1{
+.home.content h1 {
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
@@ -149,16 +155,16 @@ section{
     margin-bottom: 40px;
 }
 
-.home .content h1 span{
+.home .content h1 span {
     font-size: 1.2em;
     font-weight: 600;
 }
 
-.home .content p{
+.home .content p {
     margin-bottom: 65px;
 }
 
-.home .content a{
+.home .content a {
     background: #fff;
     padding: 15px 35px;
     color: #14bfd9;
@@ -168,7 +174,7 @@ section{
     border-radius: 2px;
 }
 
-.home .media-icons{
+.home .media-icons {
     z-index: 888;
     position: absolute;
     right: 30px;
@@ -177,40 +183,40 @@ section{
     transition: 0.5s ease;
 }
 
-.home .media-icons a{
+.home .media-icons a {
     color: #fff;
     font-size: 1.6em;
     transition: 0.3s ease;
 }
 
-.home .media-icons a:not(:last-child){
+.home .media-icons a:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.home .media-icons a:hover[aria-label="facebook"]{
+.home .media-icons a:hover[aria-label="facebook"] {
     transform: scale(1.3);
     color: #1877F2;
 }
 
-.home .media-icons a:hover[aria-label="instagram"]{
+.home .media-icons a:hover[aria-label="instagram"] {
     transform: scale(1.3);
     color: #E4405F;
 }
 
-.home .media-icons a:hover[aria-label="Twitter"]{
+.home .media-icons a:hover[aria-label="Twitter"] {
     transform: scale(1.3);
     color: #1DA1F2;
 }
 
-.home .media-icons a:hover[aria-label="gmail"]{
+.home .media-icons a:hover[aria-label="gmail"] {
     transform: scale(1.3);
     color: #ed3f3f;
 }
 
-.home video{
+.home video {
     z-index: 000;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -218,7 +224,7 @@ section{
 }
 
 
-.slider-navigation{
+.slider-navigation {
     z-index: 888;
     position: relative;
     display: flex;
@@ -228,35 +234,35 @@ section{
     margin-bottom: 12px;
 }
 
-.slider-navigation .nav-btn{
+.slider-navigation .nav-btn {
     width: 12px;
     height: 12px;
-    background: #fff; 
+    background: #fff;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     transition: 0.3s ease;
 }
 
-.slider-navigation .nav-btn.active{
+.slider-navigation .nav-btn.active {
     background: #2686e9;
 }
 
-.slider-navigation .nav-btn:not(:last-child){
+.slider-navigation .nav-btn:not(:last-child) {
     margin-right: 20px;
 }
 
-.slider-navigation .nav-btn:hover{
+.slider-navigation .nav-btn:hover {
     transform: scale(1.5);
 }
 
-.video-slide{
+.video-slide {
     position: absolute;
     width: 100%;
     clip-path: circle(0% at 0 50%);
 }
 
-.video-slide.active{
+.video-slide.active {
     clip-path: circle(150% at 0 50%);
     transition: 2s ease;
     transition-property: clip-path;
@@ -274,7 +280,7 @@ section{
     position: absolute;
     background-color: #000000;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -292,7 +298,8 @@ section{
 .dropdown-content a:hover {
     background-color: #000000;
 }
- /* about india section */
+
+/* about india section */
 .aboutindia {
     font-family: 'Borel', cursive;
     /* text-align: center; */
@@ -341,28 +348,44 @@ section{
     max-width: 1100px;
     width: 100%;
     position: relative;
-    margin: 0 auto; /* Center the slider */
-  }
-  
-  .wrapper i {
+    margin: 0 auto;
+    /* Center the slider */
+    padding: 20px;
+    /* Add padding to the wrapper */
+}
+
+.wrapper i {
     /* Styles for navigation icons */
     top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  background: #be5555;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-  z-index: 1;
-  }
-  
-  .wrapper .carousel {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #be5555;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    z-index: 1;
+}
+
+/* .wrapper i:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+} */
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+.wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -374,148 +397,172 @@ section{
     scrollbar-width: none;
     /* Other styles for the carousel */
     background-color: #f8f8f8;
-  padding: 20px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Card styles */
-  .carousel .card {
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Card styles */
+.carousel .card {
     /* Card styles */
     scroll-snap-align: start;
-  height: 528px;
-  list-style: none;
-  background: #d8ba32;
-  cursor: pointer;
-  padding-bottom: 13px;
-  flex-direction: column;
-  border-radius: 8px;
-  position: relative;
-  }
-  
-  .carousel .card h3 {
+    height: 528px;
+    list-style: none;
+    background: #d8ba32;
+    cursor: pointer;
+    padding-bottom: 13px;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+}
+
+.carousel .card:hover {
+    transform: scale(1.1);
+}
+
+.carousel .card h3 {
     /* Styles for card title */
     font-weight: 500;
-  font-size: 1.31rem;
-  margin: 20px 0;
-  color: #930909; /* Adjust text color */
-  position: absolute; /* Position above image */
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.5); /* Add a background color */
-  padding: 6px 12px; /* Add some padding */
-  border-radius: 8px;
-  }
-  
-  .carousel .card .img {
+    font-size: 1.31rem;
+    margin: 20px 0;
+    color: #930909;
+    /* Adjust text color */
+    position: absolute;
+    /* Position above image */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Add a background color */
+    padding: 6px 12px;
+    /* Add some padding */
+    border-radius: 8px;
+}
+
+.carousel .card .img {
     /* Styles for card image container */
     background: #0c0b0c;
-  width: 330px;
-  height: 240px;
-  border-radius: 50%;
-  margin-top: 10px;
-  }
-  
-  .carousel .card .img img {
+    width: 330px;
+    height: 240px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.carousel .card .img img {
     /* Styles for card image */
     width: 330px;
-  height: 240px;
-  border-radius: 12px;
-  object-fit: cover;
-  border: 4px solid #e11010;
-  }
-  
-  .carousel .card h2 {
+    height: 240px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 4px solid #e11010;
+}
+
+.carousel .card h2 {
     /* Styles for heading */
     font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-  }
-  
-  .carousel .card span {
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.carousel .card span {
     /* Styles for subtitle */
     color: #6A6D78;
-  font-size: 1.31rem;
-  }
-  
-  .carousel .card .icons-grid {
+    font-size: 1.31rem;
+}
+
+.carousel .card .icons-grid {
     /* Styles for icon grid */
     display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
-  margin-top: 10px;
-  justify-items: center;
-  align-items: center;
-  /* font-size: 1.2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    margin-top: 10px;
+    justify-items: center;
+    align-items: center;
+    /* font-size: 1.2rem;
   color: #fff; */
 }
 
 .carousel .card .icons-grid i {
     font-size: 1.2rem;
     color: #fff;
-  }
-  
-  .card .para {
+}
+
+.card .para {
     /* Styles for paragraph */
     font-size: 25px;
-  }
+}
 
-  .carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
     display: none;
-  }
-  .carousel.no-transition {
+}
+
+.carousel.no-transition {
     scroll-behavior: auto;
-  }
-  .carousel.dragging {
+}
+
+.carousel.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;
-  }
-  .carousel.dragging .card {
+}
+
+.carousel.dragging .card {
     cursor: grab;
     webkit-user-select: none;
-  }
-  .carousel :where(.card, .img) {
+}
+
+.carousel :where(.card, .img) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Media queries for responsiveness */
-  @media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      /* Adjust grid columns for smaller screens */
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      /* Adjust grid columns for even smaller screens */
-      grid-auto-columns: 100%;
-    }
-  }
-  
+}
 
-    
-@media (max-width:1040px){
-    header{
+.popularpackages .packages {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.explorevisit .explorebefore h2{
+    text-decoration: underline;
+    font-size: 38px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        /* Adjust grid columns for smaller screens */
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        /* Adjust grid columns for even smaller screens */
+        grid-auto-columns: 100%;
+    }
+}
+
+
+
+@media (max-width:1040px) {
+    header {
         padding: 12px 20px;
     }
 
 
-    section{
+    section {
         padding: 100px 20px;
     }
 
-    .home .media-icons{
+    .home .media-icons {
         right: 15px;
     }
 
-    header .navigation{
+    header .navigation {
         display: none;
     }
 
-    header .navigation.active{
+    header .navigation.active {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -524,10 +571,10 @@ section{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(1,1,1,0.5);
+        background: rgba(1, 1, 1, 0.5);
     }
- 
-    .menu-btn{
+
+    .menu-btn {
         background: url(/assets/images/menu.jpeg)no-repeat;
         background-size: 50px;
         background-position: center;
@@ -537,19 +584,19 @@ section{
         transition: 0.3s ease;
     }
 
-    header .navigation.active .navigation-items a{
+    header .navigation.active .navigation-items a {
         color: #222;
         font-size: 1.2em;
         margin: 20px;
-        
+
     }
 
-    header .navigation .navigation-items a:before{
+    header .navigation .navigation-items a:before {
         background: #222;
         height: 5px;
     }
 
-    header .navigation .navigation-items{
+    header .navigation .navigation-items {
         background: #fff;
         width: 600px;
         max-width: 600px;
@@ -561,9 +608,9 @@ section{
         border-radius: 5px;
         box-shadow: 0 5px 5px rgb(1 1 1 / 20%);
     }
-    
 
-    .menu-btn.active{
+
+    .menu-btn.active {
         z-index: 999;
         background: url(/assets/images/close.png)no-repeat;
         background-size: 30px;

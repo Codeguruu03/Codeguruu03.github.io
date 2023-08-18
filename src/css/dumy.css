@@ -125,6 +125,7 @@ body {
 .carousel .card span {
   color: #6A6D78;
   font-size: 1.31rem;
+  text-align: left;
 }
 
 .carousel .card .icons-grid {
