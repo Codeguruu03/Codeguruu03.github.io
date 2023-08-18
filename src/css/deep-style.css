@@ -274,7 +274,7 @@ section {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 8px;
 }
 
 .dropdown-content {
@@ -426,7 +426,7 @@ section {
 .carousel .card h3 {
     height: 528px;
     list-style: none;
-    background: #d8ba32;
+    /* background: #000000; */
     cursor: pointer;
     padding-bottom: 13px;
     flex-direction: column;
@@ -443,7 +443,7 @@ section {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.5); /* Add a background color */
+    /* background-color: rgba(255, 255, 255, 0.5); Add a background color */
     padding: 6px 12px; /* Add some padding */
     border-radius: 8px;
 }
@@ -534,6 +534,11 @@ section {
     text-decoration: underline;
     font-size: 38px;
 }
+
+/* .explorevisit #left{
+    left: 0;
+    transform: translateX(-50%);
+} */
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 900px) {
