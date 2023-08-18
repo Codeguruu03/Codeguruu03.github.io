@@ -449,7 +449,7 @@ section{
   }
   .carousel.dragging .card {
     cursor: grab;
-    user-select: none;
+    webkit-user-select: none;
   }
   .carousel :where(.card, .img) {
     display: flex;
