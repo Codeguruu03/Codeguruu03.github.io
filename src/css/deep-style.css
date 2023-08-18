@@ -411,7 +411,6 @@ section{
 .carousel .card {
     /* Card styles */
     scroll-snap-align: start;
-<<<<<<< HEAD
     height: 528px;
     list-style: none;
     background: #d8ba32;
@@ -427,7 +426,6 @@ section{
 }
 
 .carousel .card h3 {
-=======
   height: 528px;
   list-style: none;
   background: #d8ba32;
@@ -439,7 +437,6 @@ section{
   }
    
   .carousel .card h3 {
->>>>>>> 63dcb0878e552377fc98c21062f74caa72f76b38
     /* Styles for card title */
     font-weight: 500;
     font-size: 1.31rem;
