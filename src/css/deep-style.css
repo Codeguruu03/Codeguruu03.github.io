@@ -103,11 +103,9 @@ header .navigation .navigation-items .register-btn a {
 
 }
 
-<<<<<<< HEAD
+
 section {
-=======
-section{
->>>>>>> 63dcb0878e552377fc98c21062f74caa72f76b38
+
     padding: 100px 200px;
 }
 
@@ -426,32 +424,27 @@ section{
 }
 
 .carousel .card h3 {
-  height: 528px;
-  list-style: none;
-  background: #d8ba32;
-  cursor: pointer;
-  padding-bottom: 13px;
-  flex-direction: column;
-  border-radius: 8px;
-  position: relative;
-  }
-   
-  .carousel .card h3 {
-    /* Styles for card title */
+    height: 528px;
+    list-style: none;
+    background: #d8ba32;
+    cursor: pointer;
+    padding-bottom: 13px;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+}
+
+.carousel .card h3 {
     font-weight: 500;
     font-size: 1.31rem;
     margin: 20px 0;
-    color: #930909;
-    /* Adjust text color */
-    position: absolute;
-    /* Position above image */
+    color: #930909; /* Adjust text color */
+    position: absolute; /* Position above image */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    /* Add a background color */
-    padding: 6px 12px;
-    /* Add some padding */
+    background-color: rgba(255, 255, 255, 0.5); /* Add a background color */
+    padding: 6px 12px; /* Add some padding */
     border-radius: 8px;
 }
 
@@ -523,7 +516,7 @@ section{
 
 .carousel.dragging .card {
     cursor: grab;
-    webkit-user-select: none;
+    user-select: none;
 }
 
 .carousel :where(.card, .img) {
@@ -537,7 +530,7 @@ section{
     text-decoration: underline;
 }
 
-.explorevisit .explorebefore h2{
+.explorevisit .explorebefore h2 {
     text-decoration: underline;
     font-size: 38px;
 }
