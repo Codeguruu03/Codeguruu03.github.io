@@ -1,57 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" >
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Card Hover Effect V3</title>
-  <link rel="stylesheet" href="/src/css/gallery.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Image Gallery | CodingNepal</title>
+    <link rel="stylesheet" href="/src/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="container">
-  <div class="box">
-    <div class="imgBox">
-      <img src="https://images.pexels.com/photos/16331753/pexels-photo-16331753/free-photo-of-taj-mahal-agra-uttar-pradesh-india.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-    </div>
-    <div class="content">
-      <a href="https://www.youtube.com/watch?v=2Nck9fSBspQ" target="_blank" rel="noopener">
-      <h2>L A D A K H</br>
-      </a>
-        <!-- <span><a href="https://www.youtube.com/watch?v=2Nck9fSBspQ" target="_blank"><button class="read-more">Read More</button>
-          </a>
-          </span> -->
-      </h2>
-    </div>
-  </div>
-  <div class="box">
-    <div class="imgBox">
-      <img src="https://bit.ly/3kPjqKZ" alt="">
-    </div>
-    <div class="content">
-      <h2>Jammu & Kashmir</br>
-        <span><a href="https://www.youtube.com/watch?v=Cjl70Cqo3Q4" target="_blank" rel="noopener"><button class="read-more">Read More</button>
-        </a></span>
-      </h2>
+  <div class="wrapper">
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="bag">North India</span>
+        <span class="item" data-name="shoe">East India</span>
+        <span class="item" data-name="watch">West India</span>
+        <span class="item" data-name="camera">South India</span>
+        <!-- <span class="item" data-name="headphone">Headphone</span> -->
+      </div>
+    </nav>
+    <!-- filter Images -->
+    <div class="gallery">
+      <div class="image" data-name="bag"><span><img src="/assets/images/aboutus1.jpeg" alt=""></span></div>
+      <div class="image" data-name="headphone"><span><img src="/assets/images/aboutus2.jpeg" alt=""></span></div>
+      <div class="image" data-name="camera"><span><img src="/assets/images/aboutus3.jpeg" alt=""></span></div>
+      <div class="image" data-name="shoe"><span><img src="/assets/images/aboutus4.jpeg" alt=""></span></div>
+      <div class="image" data-name="headphone"><span><img src="/assets/images/aboutus5.jpeg" alt=""></span></div>
+      <div class="image" data-name="watch"><span><img src="/assets/images/aboutus6.jpeg" alt=""></span></div>
+      <div class="image" data-name="shoe"><span><img src="/assets/images/aboutus7.jpeg" alt=""></span></div>
+      <div class="image" data-name="camera"><span><img src="/assets/images/aboutus8.jpeg" alt=""></span></div>
     </div>
   </div>
-  <div class="box">
-    <div class="imgBox">
-      <img src="https://media.istockphoto.com/id/1439418553/photo/colorful-old-buildings-of-ancient-indian-village-malana-in-the-state-of-himachal-pradesh.jpg?b=1&s=612x612&w=0&k=20&c=3YFJGoSbvxv5brbieh5tW8SYYJuF8UIVgukxs-FU7Ds=" alt="">
+  <!-- fullscreen img preview box -->
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image Category: <p></p></span>
+      <span class="icon fas fa-times"></span>
     </div>
-    <div class="content">
-      <h2>Himachal Pradesh</br>
-        <span><a href="https://www.youtube.com/watch?v=PiMU_HLDQhE" target="_blank" rel="noopener"><button class="read-more">Read More</button>
-        </a></span>
-      </h2>
-    </div>
+    <div class="image-box"><img src="" alt=""></div>
   </div>
-</div>
-<!-- partial -->
-<!-- <script>
-  function toggleVideo(id) {
-    var videoContainer = document.getElementById(id);
-    videoContainer.classList.toggle("show-video");
-  }
-  </script> -->
+  <div class="shadow"></div>
+
+  <script src="/src/javascript/gallery.js"></script>
+
 </body>
 </html>
