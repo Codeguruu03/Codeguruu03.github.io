@@ -1,7 +1,7 @@
 THINGS TO FIX!!!
 
 1) LOGIN AND SIGNUP BUTTON FIX
-2) ADD FOOTER (in progress -Deepesh)
+2) ADD FOOTER                               (in progress -Deepesh)
 3) CHANGE HOMEPAGE VIDEOS
 4) FIX BLUISH STUFF ON VIDEOS
 5) FLESH OUT GALLARY 
