@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 200px;
+    padding: 15px 100px;
     transition: 0.5s ease;
 }
 
@@ -100,12 +100,10 @@ header .navigation .navigation-items .register-btn a {
     color: black;
     padding-right: 28px;
     text-align: center;
-
 }
 
 
 section {
-
     padding: 100px 200px;
 }
 
