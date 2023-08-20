@@ -9,6 +9,10 @@
 body{
     line-height: 1.5;
 }
+.logosection img{
+    width: 220px;
+    height: 100px;
+}
 .card-wrapper{
     max-width: 1100px;
     margin: 0 auto;
@@ -46,7 +50,7 @@ img{
     padding: 2rem 1rem;
 }
 .product-title{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
@@ -86,18 +90,18 @@ img{
 }
 .product-price{
     margin: 1rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 .product-price span{
     font-weight: 400;
 }
 .last-price span{
-    color: #f64749;
-    text-decoration: line-through;
+    color: #e31818;
+    /* text-decoration: line-through; */
 }
 .new-price span{
-    color: #256eff;
+    color: #053615;
 }
 .product-detail h2{
     text-transform: capitalize;
@@ -105,7 +109,7 @@ img{
     padding-bottom: 0.6rem;
 }
 .product-detail p{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.3rem;
     opacity: 0.8;
 }
@@ -125,6 +129,7 @@ img{
 }
 .product-detail ul li span{
     font-weight: 400;
+    font-size: 17px;
 }
 .purchase-info{
     margin: 1.5rem 0;
@@ -150,7 +155,7 @@ img{
     background: #256eff;
 }
 .purchase-info .btn:last-of-type{
-    background: #f64749;
+    background: #3cc307;
 }
 .purchase-info .btn:hover{
     opacity: 0.9;
