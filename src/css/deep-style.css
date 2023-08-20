@@ -78,7 +78,7 @@ header .navigation .navigation-items a:hover {
 }
 
 header .navigation .navigation-items .login-btn {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
     color: black;
 
 }
@@ -91,7 +91,7 @@ header .navigation .navigation-items .login-btn a {
 }
 
 header .navigation .navigation-items .register-btn {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
     color: black;
 
 }
