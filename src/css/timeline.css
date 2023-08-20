@@ -85,6 +85,14 @@ body{
   top: 15px;
   right: -60px;
 }
+
+.row-1 .list{
+  padding-left: 15px;
+}
+
+.row-2 .list{
+  padding-left: 15px;
+}
 .row-2 section .icon{
   top: 15px;
   left: -60px;
