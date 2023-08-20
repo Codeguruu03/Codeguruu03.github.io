@@ -16,6 +16,10 @@
     /* You can adjust the size to your preference */
 }
 
+.content.active p{
+    font-size: 25px;
+}
+
 /* header position */
 header {
     z-index: 999;

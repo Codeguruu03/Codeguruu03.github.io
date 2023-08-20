@@ -58,6 +58,8 @@ section {
 
 .section-header p {
   color: #FFF;
+  font-size: 19px;
+  font-weight: 2px;
 }
 
 .row  {
@@ -101,7 +103,7 @@ section {
 
 .contact-info-content p {
   color: #FFF;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .contact-form {
