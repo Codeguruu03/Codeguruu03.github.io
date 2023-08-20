@@ -516,7 +516,7 @@ section {
 
 .carousel.dragging .card {
     cursor: grab;
-    webkit-user-select: none;
+    user-select: none;
 }
 
 .carousel :where(.card, .img) {
