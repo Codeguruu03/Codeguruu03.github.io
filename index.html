@@ -354,43 +354,43 @@
         }
 
         // Set an interval for auto-sliding every 5 seconds (5000 milliseconds)
-        const autoSlideInterval = setInterval(autoSlide, 7000);
+        const autoSlideInterval = setInterval(autoSlide, 6000);
 
-        // Pause auto-slide when a navigation button is clicked
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                clearInterval(autoSlideInterval); // Stop auto-slide
-                sliderNav(i);
-            });
+       // Pause auto-slide when a navigation button is clicked
+       btns.forEach((btn, i) => {
+           btn.addEventListener("click", () => {
+               //clearInterval(autoSlideInterval); // Stop auto-slide
+               sliderNav(i);
+           });
         });
 
         // Restart auto-slide when the last video ends
         slides[slides.length - 1].addEventListener("ended", () => {
-            autoSlideIsnterval = setInterval(autoSlide, 7000);
+            autoSlideIsnterval = setInterval(autoSlide, 6000);
         });
         // for the scrolling and the parallex effect
-        document.addEventListener("DOMContentLoaded", function () {
-            const videos = document.querySelectorAll(".video-slide");
-            const videoContainer = document.querySelector(".video-container");
-            const videoOffset = videoContainer.offsetTop;
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const videos = document.querySelectorAll(".video-slide");
+        //     const videoContainer = document.querySelector(".video-container");
+        //     const videoOffset = videoContainer.offsetTop;
 
-            function handleScroll() {
-                const scrollY = window.scrollY;
-                const scrollPercent = (scrollY - videoOffset) / window.innerHeight;
+        //     function handleScroll() {
+        //         const scrollY = window.scrollY;
+        //         const scrollPercent = (scrollY - videoOffset) / window.innerHeight;
 
-                videos.forEach((video, index) => {
-                    const videoOpacity = Math.max(0, 1 - Math.abs(scrollPercent - index) * 2);
-                    video.style.opacity = videoOpacity;
-                    if (videoOpacity === 1) {
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
-                });
-            }
+        //         videos.forEach((video, index) => {
+        //             const videoOpacity = Math.max(0, 1 - Math.abs(scrollPercent - index) * 2);
+        //             video.style.opacity = videoOpacity;
+        //             if (videoOpacity === 1) {
+        //                 video.play();
+        //             } else {
+        //                 video.pause();
+        //             }
+        //         });
+        //     }
 
-            window.addEventListener("scroll", handleScroll);
-        });
+        //     window.addEventListener("scroll", handleScroll);
+        // });
 
         function toggleAboutIndiaContent() {
             const aboutIndiaContent = document.getElementById("aboutIndiaContent");

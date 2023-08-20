@@ -1,12 +1,11 @@
 THINGS TO FIX!!!
 
-1) LOGIN AND SIGNUP BUTTON FIX
+1) LOGIN AND SIGNUP BUTTON FIX              
 2) ADD FOOTER                               (COMPLETED -Deepesh)
 3) CHANGE HOMEPAGE VIDEOS
-4) FIX BLUISH STUFF ON VIDEOS
+4) FIX BLUISH STUFF ON VIDEOS               (Completed- Krish)
 5) FLESH OUT GALLARY 
 6) FINISH ABOUT US PAGE ONCE AND FOR ALL
-<<<<<<< HEAD
 7) statue of unity
 taj mahl
 adi yogi
@@ -16,6 +15,3 @@ atal tunnel
 
 youtube page par transfer
 
-=======
-7) CREATE COONTACT US PAGE                  (COMPLETED - Deepesh)
->>>>>>> 66faaec4d19969fb6f1f270008ef94b356029427

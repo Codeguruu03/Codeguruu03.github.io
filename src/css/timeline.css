@@ -9,7 +9,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background: #ff7979;
+  background: #72afe4;
 }
 ::selection{
   color: #fff;
@@ -84,6 +84,14 @@ body{
 .row-1 section .icon{
   top: 15px;
   right: -60px;
+}
+
+.row-1 .list{
+  padding-left: 15px;
+}
+
+.row-2 .list{
+  padding-left: 15px;
 }
 .row-2 section .icon{
   top: 15px;
