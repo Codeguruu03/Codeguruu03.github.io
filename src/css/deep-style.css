@@ -78,26 +78,26 @@ header .navigation .navigation-items a:hover {
 }
 
 header .navigation .navigation-items .login-btn {
-    background-color: white;
-    color: black;
-
+    background-color: rgba(255, 255, 255, 0);
+    color: #050404;
+    border-radius: 22px;
 }
 
 header .navigation .navigation-items .login-btn a {
-    color: black;
+    color: #fff;
     padding-right: 30px;
     text-align: center;
 
 }
 
 header .navigation .navigation-items .register-btn {
-    background-color: white;
-    color: black;
-
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(249, 246, 246);
+    border-radius: 22px;
 }
 
 header .navigation .navigation-items .register-btn a {
-    color: black;
+    color: rgb(249, 247, 247);
     padding-right: 28px;
     text-align: center;
 }
@@ -114,7 +114,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #2696e9;
+    background: #10c4edd1;
 }
 
 .home::before {
@@ -159,7 +159,7 @@ section {
     font-size: 1.2em;
     font-weight: 600;
     color: 
-    #0f0e0e;
+    #fff;
 }
 
 .home .content p {
