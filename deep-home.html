@@ -271,7 +271,7 @@
         }
 
         // Set an interval for auto-sliding every 5 seconds (5000 milliseconds)
-        const autoSlideInterval = setInterval(autoSlide, 7000);
+        const autoSlideInterval = setInterval(autoSlide, 6000);
 
         // Pause auto-slide when a navigation button is clicked
         btns.forEach((btn, i) => {
@@ -283,7 +283,7 @@
 
         // Restart auto-slide when the last video ends
         slides[slides.length - 1].addEventListener("ended", () => {
-            autoSlideIsnterval = setInterval(autoSlide, 7000);
+            autoSlideIsnterval = setInterval(autoSlide, 6000);
         });
         // for the scrolling and the parallex effect
         // document.addEventListener("DOMContentLoaded", function () {
