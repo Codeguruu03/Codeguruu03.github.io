@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filterable Image Gallery | CodingNepal</title>
-    <link rel="stylesheet" href="/src/css/gallery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filterable Image Gallery | CodingNepal</title>
+  <link rel="stylesheet" href="/src/css/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
   <div class="wrapper">
     <!-- filter Items -->
     <nav>
       <div class="items">
-        <a class="item active"  data-name="all">All</a>
-        <a class="item"  data-name="bag">North India</a>
-        <a class="item" data-name="shoe">East India</a>
-        <a class="item" data-name="watch">West India</a>
-        <a class="item" data-name="camera">South India</a>
-        <!-- <span class="item" data-name="camera"></span> -->
-        <a class="item" data-name="headphone">Central India</a>
+        <a class="item active" data-name="all">All</a>
+        <a class="item" data-name="North India">North India</a>
+        <a class="item" data-name="East India">East India</a>
+        <a class="item" data-name="West India">West India</a>
+        <a class="item" data-name="South India">South India</a>
+        <!-- <span class="item" data-name="South India"></span> -->
+        <a class="item" data-name="Central India">Central India</a>
       </div>
     </nav>
     <!-- filter Images -->
     <div class="gallery">
-      <div class="image" data-name="bag"><span><img src="/assets/images/aboutus1.jpeg" alt=""></span></div>
-      <div class="image" data-name="headphone"><span><img src="/assets/images/aboutus2.jpeg" alt=""></span></div>
-      <div class="image" data-name="camera"><span><img src="/assets/images/aboutus3.jpeg" alt=""></span></div>
-      <div class="image" data-name="shoe"><span><img src="/assets/images/aboutus4.jpeg" alt=""></span></div>
-      <div class="image" data-name="headphone"><span><img src="/assets/images/aboutus5.jpeg" alt=""></span></div>
-      <div class="image" data-name="watch"><span><img src="/assets/images/aboutus6.jpeg" alt=""></span></div>
-      <div class="image" data-name="shoe"><span><img src="/assets/images/aboutus7.jpeg" alt=""></span></div>
-      <div class="image" data-name="camera"><span><img src="/assets/images/aboutus8.jpeg" alt=""></span></div>
+      <div class="image" data-name="North India"><span><img src="/assets/galleryimages/North/north1.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="Central India"><span><img src="/assets/images/aboutus2.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="South India"><span><img src="/assets/galleryimages/south/south1.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="East India"><span><img src="/assets/galleryimages/East/east1.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="Central India"><span><img src="/assets/images/aboutus5.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="West India"><span><img src="/assets/galleryimages/west/west1.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="North India"><span><img src="/assets/galleryimages/North/north2.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="East India"><span><img src="/assets/galleryimages/East/east2.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="South India"><span><img src="/assets/galleryimages/south/south2.jpeg" alt="">
+        </span>
+      </div>
+      <div class="image" data-name="North India"><span><img src="/assets/galleryimages/North/north3.jpeg" alt="">
+        </span>
+      </div>
     </div>
   </div>
   <!-- fullscreen img preview box -->
@@ -47,4 +71,5 @@
   <script src="/src/javascript/gallery.js"></script>
 
 </body>
+
 </html>

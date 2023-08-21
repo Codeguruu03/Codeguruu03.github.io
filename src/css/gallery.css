@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+ 
 }
 
 ::selection {
@@ -53,6 +54,7 @@ body {
   text-decoration: underline;
   font-size: 1.6rem;
   transition: 3 ease;
+  font-weight: bolder;
 }
 
 .items a{
@@ -68,6 +70,7 @@ body {
   transform: scale(1.1);
   /* Scale up the element when hovering or active */
   transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: bolder;
 }
 
 
@@ -80,6 +83,7 @@ body {
 .gallery .image {
   width: calc(100% / 4);
   padding: 7px;
+  
 }
 
 .gallery .image span {
@@ -228,3 +232,24 @@ body {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
