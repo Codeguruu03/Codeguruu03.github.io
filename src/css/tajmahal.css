@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lora:ital@1&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,9 +9,16 @@
 body{
     line-height: 1.5;
 }
-.logosection img{
-    width: 220px;
-    height: 100px;
+.logosection h1{
+    /* width: 220px;
+    height: 100px; */
+    color: #000;
+    font-size: 35px;
+    align-items: center;
+    text-decoration: underline;
+    padding-left: 35px;
+    margin-top: 12px;
+    font-family: 'Lora', serif;
 }
 .card-wrapper{
     max-width: 1100px;
