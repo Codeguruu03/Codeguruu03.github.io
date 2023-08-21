@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/assets/images/bg-img.webp');
+  background-image: url('/assets/images/bg-img.jpeg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -26,7 +26,7 @@ body::after {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(54, 52, 52, 0.514);
+  background-color: rgba(54, 52, 52, 0.18);
 }
 
 section {
@@ -54,6 +54,7 @@ section {
   font-weight: bold;
   font-size: 3em;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .section-header p {
@@ -85,7 +86,7 @@ section {
   text-align: center;
   border-radius: 50%;
 }
-
+ 
 .contact-info-icon i {
   font-size: 30px;
   line-height: 70px;
@@ -96,9 +97,10 @@ section {
 }
 
 .contact-info-content h4 {
-  color: #1da9c0;
+  color: #fff;
   font-size: 1.4em;
   margin-bottom: 5px;
+  text-decoration: underline;
 }
 
 .contact-info-content p {

@@ -118,7 +118,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #10c4edd1;
+    background: #fff;
 }
 
 .home::before {
@@ -651,7 +651,7 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
+	background-color: #252323;
     padding: 70px 0;
 }
 .footer-col{
@@ -671,7 +671,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #c43162;
+	background-color: #ff477e;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -681,7 +681,7 @@ ul{
 }
 .footer-col ul li a{
 	font-size: 16px;
-	text-transform: capitalize;
+	/* text-transform: capitalize;   */
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
