@@ -27,12 +27,12 @@ body{
   justify-content: space-between;
 }
 .items span{
-  padding: 7px 25px;
+  padding: 9px 13px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   color: #007bff;
-  border-radius: 50px;
+  border-radius: 30px;
   border: 2px solid #007bff;
   transition: all 0.3s ease;
 }
