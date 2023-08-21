@@ -15,6 +15,8 @@
 
 body {
   padding: 10px;
+  /* background-color:rgb(144, 144, 222); */
+  background:linear-gradient(to left, #4A5846, #687664, #838F77, #97A391, #B9C3B4 , #ECF1E6);
 }
 
 .wrapper {
@@ -24,14 +26,17 @@ body {
 
 .wrapper nav {
   display: flex;
-  justify-content: center;
+  justify-content:left;
 }
 
 .wrapper .items {
   display: flex;
-  max-width: 720px;
+  max-width: 110px;
   width: 100%;
   justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .items span {
@@ -59,7 +64,9 @@ body {
 
 .items a{
   font-size: 22px;
+  /* padding-left: 22px; */
   /* padding: 12px; */
+  padding: 10px 20px;
 }
 
 .items a.item:hover,
