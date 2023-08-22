@@ -431,6 +431,7 @@ section {
     border-radius: 1px;
     position: relative;
     border: 1px solid gainsboro;
+    box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .carousel .card:hover {
@@ -448,10 +449,20 @@ section {
     position: relative;
 }
 
+.carousel .card .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.carousel .card .content ul{
+    padding-right: 110px;
+    list-style:disc;
+}
 .carousel .card h3 {
     font-weight: 500;
     font-size: 1.31rem;
-    margin: 20px 0;
+    margin-top: -8px;
     color: #930909; /* Adjust text color */
     position: absolute; /* Position above image */
     top: 0;
@@ -485,12 +496,14 @@ section {
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
+    align-self: flex-start;
 }
 
 .carousel .card span {
     /* Styles for subtitle */
     color: #6A6D78;
     font-size: 1.31rem;
+    align-self: flex-start;
 }
 
 .carousel .card .icons-grid {
@@ -513,6 +526,7 @@ section {
 .card .para {
     /* Styles for paragraph */
     font-size: 25px;
+    margin-left: auto;
 }
 
 .carousel::-webkit-scrollbar {
