@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
+
 <body>
 
     <header>
@@ -221,7 +222,7 @@
         <br>
         <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"></i>
-            <ul class="carousel">
+            <ul class="carousel carousel2">
                 <li class="card">
                     <h3>naman</h3>
                     <div class="img"><img src="/assets/images/aboutus1.jpeg" alt="img" draggable="false"></div>
@@ -404,8 +405,10 @@
 
         const wrapper = document.querySelector(".wrapper");
         const carousel = document.querySelector(".carousel");
+        const carousel2 = document.querySelector(".carousel2");
         const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-        const arrowBtns = document.querySelectorAll(".wrapper i");
+        const arrowBtns1 = document.querySelectorAll(".popularpackages .wrapper i");
+        const arrowBtns2 = document.querySelectorAll(".explorevisit .wrapper i");
         const carouselChildrens = [...carousel.children];
 
         let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
@@ -429,12 +432,16 @@
         carousel.classList.remove("no-transition");
 
         // Add event listeners for the arrow buttons to scroll the carousel left and right
-        arrowBtns.forEach(btn => {
+        arrowBtns1.forEach(btn => {
             btn.addEventListener("click", () => {
                 carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
             });
         });
-
+        arrowBtns2.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel2.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+            });
+        });
         const dragStart = (e) => {
             isDragging = true;
             carousel.classList.add("dragging");
