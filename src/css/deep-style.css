@@ -554,6 +554,20 @@ section {
     transform: translateX(-50%);
 } */
 
+/*fast tag designer*/
+.icons-grid ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns of equal width */
+    grid-gap: 62px; /* Gap between grid cells */
+    padding: 20px;
+    padding-top: 32px;
+}
+.grid-icons li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    list-style: none; /* Remove default list bullet */
+}
 /* Media queries for responsiveness */
 @media screen and (max-width: 900px) {
     .wrapper .carousel {

@@ -11,37 +11,42 @@ body{
 
 }
 
-/* Style for the navigation bar */
-.navbar {
+header {
     background-color: #333;
-    overflow: hidden;
-}
-
-/* Style for the navigation links */
-.navbar a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-.logosection img{
-    width: 220px;
-    height: 100px;
-    color: #000;
-    font-size: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-decoration: underline;
-    /* padding-left: 35px;
-    margin-top: 12px; */
-    font-family: 'Lora', serif;
+    padding: 10px 20px;
+}
+
+.logo .brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navigation-items {
+    list-style: none;
+    display: flex;
+    
+}
+
+.navigation-items li {
+    margin-right: 20px;
+    
+}
+    
+.navigation-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation-items a:hover {
+    color: #ec154e;
 }
 .card-wrapper{
     max-width: 1100px;

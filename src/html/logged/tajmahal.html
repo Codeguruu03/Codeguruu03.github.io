@@ -11,20 +11,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/9f21bbf7ef.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="logosection">
-        <nav>
-            <div class="navbar">
-                <img src="/assets/images/logo.png" alt="logo">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <header>
+        <div class="logo">
+            <a href="/index.html" class="brand">Travel Buddy</a>
+        </div>
+        <nav class="navigation">
+            <ul class='navigation-items'>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/src/html/unlogged/aboutus.html" class="active">About Us</a></li>
+                <li><a href="/src/html/gallery.html">Gallery</a></li>
+                <li><a href="/src/html/contactus.html" target="_blank" rel="noopener">Contact</a></li>
+                <!-- <li><a href="http://127.0.0.1:5000" target="_blank" rel="noopener">LOGIN</a></li>
+                    <li><a href="http://127.0.0.1:5500" target="_blank" rel="noopener">SIGN UP!</a></li> -->
+                    <li><i class="fa-solid fa-house"></i></li>
+
+            </ul>
         </nav>
-    </section>
+    </header>
     <section class="first-section">
         <div class="card-wrapper">
             <div class="card">
@@ -43,6 +50,7 @@
                             <a href="#" data-id="1">
                                 <img src="/assets/images/aboutus1.jpeg" alt="shoe image">
                             </a>
+                            
                         </div>
                         <div class="img-item">
                             <a href="#" data-id="2">
@@ -63,7 +71,7 @@
                 </div>
                 <!-- card right -->
                 <div class="product-content">
-                    <h2 class="product-title">ENCHANTING INDIA(13D,14N)</h2>
+                    <h2 class="product-title">ENCHANTING INDIA</h2>
                     <!-- <a href="#" class="product-link">visit Taj Mahal</a> -->
                     <div class="product-rating">
                         <i class="fas fa-star"></i>
@@ -90,13 +98,14 @@
                         <p>The tour consists of breathtaking destinations including the taj mahal, dal lake,
                             Gulmarg, Leh , Agra fort, Mussoorie and the holy city of Haridwar. Arrangements for
                             a comfortable stay & travel for 13 days & 14 nights are made for you</p>
-                        <ul>
+                        <!-- <ul>
                             <li>Kashmir: <span>6D,5N</span></li>
                             <li>Ladakh: <span>5D,4N</span></li>
-                            <!-- <li>Uttar Pradesh: <span>1D,1N</span></li> -->
-                            <li>Uttarakhand: <span>3D,3N</span></li>
-                            <!-- <li>: <span>Free</span></li> -->
-                        </ul>
+                             <li>Uttar Pradesh: <span>1D,1N</span></li> -->
+                            <!-- <li>Uttarakhand: <span>3D,3N</span></li> -->
+                            <!-- <li>: <span>Free</span></li>
+                        </ul>  -->
+                        
                     </div>
 
                     <div class="purchase-info">
@@ -107,6 +116,7 @@
                         </button>
                         <button type="button" class="btn">Book Now</button>
                     </div>
+                    
 
                     <!-- <div class="social-links">
                         <p>Share At: </p>
