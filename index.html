@@ -52,7 +52,7 @@
 
     <section class="home">
         <div class="video-container">
-            <video class="video-slide active" src="/assets/videos/vdo1.mp4" autoplay muted loop></video>
+            <video class="video-slide active" id="vdo1" src="/assets/videos/vdo1.mp4" autoplay muted loop></video>
             <video class="video-slide" src="/assets/videos/vdo2.mp4" autoplay muted loop></video>
             <video class="video-slide" src="/assets/videos/vdo3.mp4" autoplay muted loop></video>
             <video class="video-slide" src="/assets/videos/vdo4.mp4" autoplay muted loop></video>
@@ -72,7 +72,7 @@
         </div>
 
         <div class="content">
-            <h1><span>Adventures.</span><br>Treaking</h1>
+            <h1><span>Adventures.</span><br>Trekking</h1>
             <p>Every adventure starts with a single step .Embrace your adventure and let is begin.</p>
             <!-- <a href="#" class="btn">Read More</a> -->
         </div>
@@ -123,10 +123,10 @@
                 southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the
                 west;China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean,
                 India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime
-                border with Thailand, Myanmar, and Indonesia.
+                border with Thailand, Myanmar, and Indonesia......
             </p>
             <br>
-            <p>
+            <!-- <p>
                 Modern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago.Their long
                 occupation, initially in varying forms of isolation as hunter-gatherers, has made the region highly
                 diverse, second only to Africa in human genetic diversity.Settled life emerged on the subcontinent in
@@ -141,10 +141,12 @@
                 suffused with wide-ranging creativity,but also marked by the declining status of women,and the
                 incorporation of untouchability into an organised system of belief.In South India, the Middle kingdoms
                 exported Dravidian-languages scripts and religious cultures to the kingdoms of Southeast Asia.
-            </p>
+            </p> -->
         </div>
         <div class="button-container">
-            <!-- <button class="readmore1" onclick="toggleAboutIndiaContent()">Read More..</button> -->
+            <button class="readmore1">
+                <a href="/src/html/aboutindia.html">Read More...</a>
+            </button>
         </div>
     </section>
 
@@ -373,6 +375,7 @@
         const btns = document.querySelectorAll(".nav-btn");
         const slides = document.querySelectorAll(".video-slide");
         const contents = document.querySelectorAll(".content");
+        const videos = document.querySelectorAll(".video-slide video");
 
         let currentSlide = 0;
 
@@ -395,11 +398,11 @@
 
         function autoSlide() {
             let nextSlide = (currentSlide + 1) % slides.length;
-            sliderNav(nextSlide);
+            sliderNav(nextSlide);   
         }
 
         // Set an interval for auto-sliding every 5 seconds (5000 milliseconds)
-        const autoSlideInterval = setInterval(autoSlide, 6000);
+        const autoSlideInterval = setInterval(autoSlide, 7000);
 
        // Pause auto-slide when a navigation button is clicked
        btns.forEach((btn, i) => {
@@ -411,7 +414,7 @@
 
         // Restart auto-slide when the last video ends
         slides[slides.length - 1].addEventListener("ended", () => {
-            autoSlideIsnterval = setInterval(autoSlide, 6000);
+            autoSlideIsnterval = setInterval(autoSlide, 8000);
         });
         // for the scrolling and the parallex effect
         // document.addEventListener("DOMContentLoaded", function () {
