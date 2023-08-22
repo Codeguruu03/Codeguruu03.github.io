@@ -50,6 +50,25 @@ body {
   transition: all 0.3s ease;
 }
 
+.items ul{
+  display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six equal-width columns */
+    grid-gap: 28px; /* Gap between grid cells */
+    /* padding: 10px; */
+    margin-right: 45px;
+    margin-left: -534px;
+    /* text-align: center; */
+}
+
+.items-list li{
+  /* background-color: #f0f0f0; */
+    padding: 10px;
+    white-space: nowrap;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    list-style: none;
+}
+
 .items span.active,
 .items span:hover {
   font-size: 1.1em;
