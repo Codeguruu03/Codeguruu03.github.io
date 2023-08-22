@@ -1,0 +1,85 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.title {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.blog-post {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-top: 0.5em;
+}
+
+.logo .brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navigation-items {
+    list-style: none;
+    display: flex;
+    
+}
+
+.navigation-items li {
+    margin-right: 20px;
+    
+}
+
+.navigation-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation-items a:hover {
+    color: #ec154e;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #222;
+    color: #fff;
+}
