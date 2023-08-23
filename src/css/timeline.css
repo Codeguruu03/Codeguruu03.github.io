@@ -11,6 +11,12 @@ html{
 body{
   background:#cfd4e7;
 }
+
+.itinerary{
+  padding-left: 86px;
+  font-size: 25px;
+  text-decoration: underline;
+}
 ::selection{
   color: #fff;
   background: #ff7979;
