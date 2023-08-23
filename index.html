@@ -600,9 +600,11 @@
         const wrapper = document.querySelector(".wrapper");
         const carousel = document.querySelector(".carousel");
         const carousel2 = document.querySelector(".carousel2");
+        const carousel3 = document.querySelector(".Explore .carousel");
         const firstCardWidth = carousel.querySelector(".card").offsetWidth;
         const arrowBtns1 = document.querySelectorAll(".popularpackages .wrapper i");
         const arrowBtns2 = document.querySelectorAll(".explorevisit .wrapper i");
+        const arrowBtns3 = document.querySelectorAll(".Explore .wrapper i");
         const carouselChildrens = [...carousel.children];
 
         let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
@@ -634,6 +636,11 @@
         arrowBtns2.forEach(btn => {
             btn.addEventListener("click", () => {
                 carousel2.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+            });
+        });
+        arrowBtns3.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel3.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
             });
         });
         const dragStart = (e) => {
