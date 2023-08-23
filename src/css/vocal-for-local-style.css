@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,6 +21,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .grid-item {
