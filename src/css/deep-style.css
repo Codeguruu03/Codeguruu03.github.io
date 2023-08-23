@@ -224,6 +224,11 @@ section {
     color: #ed3f3f;
 }
 
+.home .media-icons a:hover[aria-label="yt"] {
+    transform: scale(1.3);
+    color: #cd201f;
+}
+
 .home video {
     z-index: 000;
     position: absolute;
@@ -820,6 +825,7 @@ ul {
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
+    padding: auto;
 }
 
 .footer-col ul li a:hover {

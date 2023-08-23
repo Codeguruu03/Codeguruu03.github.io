@@ -28,11 +28,13 @@ header {
   padding: 10px 20px;
 }
 
-.logo .brand {
+.logo .brand img {
   color: #fff;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
+  height: 55px;
+  width: 145px;
 }
 
 .navigation-items {
