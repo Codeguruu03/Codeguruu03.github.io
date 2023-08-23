@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo .brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navigation-items {
+    list-style: none;
+    display: flex;
+    
+}
+
+.navigation-items li {
+    margin-right: 20px;
+    
+}
+    
+.navigation-items a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation-items a:hover {
+    color: #ec154e;
+}
+
+  .product-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 40px;
+  }
+
+  .product-image {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+  }
+
+  .product-details {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .product-description {
+    font-size: 16px;
+    color: #555;
+  }
+</style>
+<title>Product Showcase</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/images/logo.png" alt="Company Image" width="300" height="100">
+        </div>
+        
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <nav class="navigation">
+            <ul class='navigation-items'>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/src/html/unlogged/aboutus.html" class="active">About Us</a></li>
+                <li><a href="/src/html/gallery.html">Gallery</a></li>
+                <li><a href="/src/html/contactus.html" target="_blank" rel="noopener">Contact</a></li>
+                <!-- <li><a href="http://127.0.0.1:5000" target="_blank" rel="noopener">LOGIN</a></li>
+                <li><a href="http://127.0.0.1:5500" target="_blank" rel="noopener">SIGN UP!</a></li> -->
+            </ul>
+        </nav>
+    </header>
+<div class="product-container">
+  <div class="product-image">
+    <img src="/assets/images/vocal for local/jaipur/amer palace.jpeg" alt="Product Image">
+  </div>
+  <div class="product-details">
+    <div class="product-name">Amer Fort</div>
+    <div class="product-description">
+        This majestic fort is an epitome of Rajput architecture and offers panoramic views of the city. The intricate carvings, stunning courtyards, and the Sheesh Mahal (Hall of Mirrors) are truly captivating
+    </div>
+  </div>
+</div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/hawa mahal.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Hawa Mahal</div>
+      <div class="product-description">
+        Known as the "Palace of Winds," this iconic structure is famous for its unique facade with numerous windows that allowed royal women to observe street life without being seen.
+      </div>
+    </div>
+  </div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/city palace.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">City Palace</div>
+      <div class="product-description">
+        This grand palace complex showcases a blend of Rajput and Mughal architecture. It houses museums, courtyards, and the Chandra Mahal, still inhabited by the royal family.
+      </div>
+    </div>
+  </div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/Jantar mantar.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Jantar Mantar</div>
+      <div class="product-description">
+        A UNESCO World Heritage Site, this astronomical observatory boasts a collection of 19 architectural instruments designed for astronomical observations.
+      </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/arti.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Jaipur Literature Festival</div>
+      <div class="product-description">
+        The world's largest free literary festival, JLF brings together renowned authors, poets, and intellectuals for discussions, debates, and cultural exchange.
+      </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/varanasi/sari.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Albert Hall Museum</div>
+      <div class="product-description">
+        This museum showcases an impressive collection of artifacts, including miniature paintings, sculptures, costumes, and even an Egyptian mummy.
+      </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/bazar.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Johari Bazaar</div>
+      <div class="product-description">
+        Known for its vibrant gemstone and jewelry shops, this market offers a stunning array of precious and semi-precious stones, traditional jewelry, and handicrafts.
+      </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/food.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Rajasthani Cuisine</div>
+      <div class="product-description">
+        Indulge in the rich flavors of Rajasthani cuisine, including dishes like dal baati churma, ghevar, and the famous Rajasthani thali.
+      </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/jal mahal.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Jal Mahal</div>
+      <div class="product-description">
+        This "Water Palace" is located in the middle of Man Sagar Lake and offers a stunning view against the backdrop of the Aravalli hills.
+      </div>
+    </div>
+</div>
+<div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/jaipur/market.jpeg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <div class="product-name">Local Markets</div>
+      <div class="product-description">
+        Bapu Bazaar, Johari Bazaar, and Tripolia Bazaar are vibrant marketplaces where you can shop for textiles, jewelry, handicrafts, and more.
+      </div>
+    </div>
+</div>
+</body>
+</html>
