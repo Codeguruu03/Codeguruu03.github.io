@@ -1,0 +1,29 @@
+.exploreCard{
+  width: 200px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.exploreCard .cover{
+  width: inherit;
+  height: inherit;
+  background: rgba(83, 83, 194, 0.196);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.cover .text{
+  color: white;
+  padding: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.exploreCard:hover{
+  transform: scale(1.01);
+}
