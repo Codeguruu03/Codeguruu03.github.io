@@ -32,8 +32,14 @@ body {
 .grid-item img {
     max-width: 100%;
     height: auto;
+    transition: 1s ease;
 }
-
+.grid-item img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+    }
 .grid-item p {
     margin-top: 10px;
     color: #444;
