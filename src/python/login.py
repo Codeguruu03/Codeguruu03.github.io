@@ -8,7 +8,7 @@ app.secret_key='abcdef'
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'naman123!@#G',
+    'password': 'NerdyGamer611',
     'database': 'travelbuddy'
 }
 
