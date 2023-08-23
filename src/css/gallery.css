@@ -19,6 +19,44 @@ body {
   background:linear-gradient(to left, #4A5846, #687664, #838F77, #97A391, #B9C3B4 , #ECF1E6);
 }
 
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo .brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navigation-items {
+  list-style: none;
+  display: flex;
+  
+}
+
+.navigation-items li {
+  margin-right: 20px;
+  
+}
+  
+.navigation-items a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navigation-items a:hover {
+  color: #ec154e;
+}
+
 .wrapper {
   margin: 100px auto;
   max-width: 1100px;
