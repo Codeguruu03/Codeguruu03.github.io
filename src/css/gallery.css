@@ -16,7 +16,8 @@
 body {
   padding: 10px;
   /* background-color:rgb(144, 144, 222); */
-  background:linear-gradient(to left, #4A5846, #687664, #838F77, #97A391, #B9C3B4 , #ECF1E6);
+  /* background:linear-gradient(to left, #4A5846, #687664, #838F77, #97A391, #B9C3B4 , #ECF1E6); */
+  background-color: #faf5f5;
 }
 
 header {
