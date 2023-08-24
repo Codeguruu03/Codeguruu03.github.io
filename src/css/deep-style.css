@@ -513,6 +513,11 @@ section {
     /* border: 2px solid black; */
     border-radius: 35px;
 }
+
+.carousel .nounderline{
+    text-decoration: none;
+    color: #276595;
+}
 .carousel .card .h2-wrapper{
     text-align: right; /* Position h2 on the right */
     margin-bottom: 10px;
