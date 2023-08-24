@@ -347,7 +347,7 @@ section {
 
 .readmore1 {
     padding: 10px 20px;
-    background-color: #2696e9;
+    background-color: #3c9ce600;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -357,7 +357,7 @@ section {
 }
 
 .readmore1:hover {
-    background-color: #cf3389;
+    background-color: #4697d6;
     transform: scale(1.05);
 }
 
