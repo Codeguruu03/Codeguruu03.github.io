@@ -87,7 +87,7 @@
 
 <body>
     <h1>Travel Form</h1>
-    <form class="travel-form">
+    <form class="travel-form" method="POST" action="/src/backend/stash">
         <label for="full-name">Full Name:</label>
         <input type="text" id="full-name" name="full-name" required>
 
@@ -103,7 +103,14 @@
         <label for="nationality">Nationality:</label>
         <input type="text" id="nationality" name="nationality" required>
 
-        
+        <label for="num-tourists">Number Of Guests:</label>
+        <input type="text" id="num-tourists" name="num-tourists" required>
+
+        <label for="package">Package:</label>
+        <input type="text" id="package" name="package" required>
+
+        <label for="month-of-travel">Desired Month Of Travel:</label>
+        <input type="text" id="month-of-travel" name="month-of-travel" required>
 
         <input type="submit" value='Register'>
     </form>
