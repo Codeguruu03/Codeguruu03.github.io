@@ -1,233 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: aliceblue;
-  }
-  header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: aliceblue;
+    }
 
-.logo .brand {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-}
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
 
-.navigation-items {
-    list-style: none;
-    display: flex;
-    
-}
+    .logo img {
+      width: auto;
+      height: 50px;
+    }
 
-.navigation-items li {
-    margin-right: 20px;
-    
-}
-    
-.navigation-items a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+    .logo .brand {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
 
-.navigation-items a:hover {
-    color: #ec154e;
-}
+    .navigation-items {
+      list-style: none;
+      display: flex;
 
-  .product-container {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding-top: 40px;
-  }
+    }
 
-  .product-image {
-    flex: 1;
-    max-width: 50%;
-  }
+    .navigation-items li {
+      margin-right: 20px;
 
-  .product-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 30px;
-  }
+    }
 
-  .product-details {
-    flex: 1;
-    padding: 20px;
-  }
+    .navigation-items a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-  .product-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+    .navigation-items a:hover {
+      color: #ec154e;
+    }
 
-  .product-description {
-    font-size: 16px;
-    color: #555;
-  }
-</style>
-<title>Varanasi</title>
+    .product-container {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 40px;
+    }
+
+    .product-image {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 30px;
+    }
+
+    .product-details {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .product-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+  <title>Varanasi</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="/assets/images/logo.png" alt="Company Image" width="300" height="100">
-        </div>
-        
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        
-        <nav class="navigation">
-            <ul class='navigation-items'>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/src/html/unlogged/aboutus.html" class="active">About Us</a></li>
-                <li><a href="/src/html/gallery.html">Gallery</a></li>
-                <li><a href="/src/html/contactus.html" target="_blank" rel="noopener">Contact</a></li>
-                <!-- <li><a href="http://127.0.0.1:5000" target="_blank" rel="noopener">LOGIN</a></li>
+  <header>
+    <div class="logo">
+      <img src="/assets/images/logo.png" alt="Company Image" width="300" height="100">
+    </div>
+
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <nav class="navigation">
+      <ul class='navigation-items'>
+        <li><a href="/deep-home.html">Home</a></li>
+        <li><a href="/src/html/aboutus.html" class="active">About Us</a></li>
+        <li><a href="/src/html/gallery.html">Gallery</a></li>
+        <li><a href="/src/html/contactus.html" target="_blank" rel="noopener">Contact</a></li>
+        <!-- <li><a href="http://127.0.0.1:5000" target="_blank" rel="noopener">LOGIN</a></li>
                 <li><a href="http://127.0.0.1:5500" target="_blank" rel="noopener">SIGN UP!</a></li> -->
-            </ul>
-        </nav>
-    </header>
-<div class="product-container">
-  <div class="product-image">
-    <img src="/assets/images/vocal for local/varanasi/ghat.jpeg" alt="Product Image">
-  </div>
-  <div class="product-details">
-    <div class="product-name">Ganges River Ghats</div>
-    <div class="product-description">
-        The ghats along the Ganges River are the heart of Varanasi. Witness the spiritual rituals, ceremonies, and bathing rituals that take place at sunrise and sunset. Most of the ghats in Varanasi were rebuilt in the 18th century under the maratha patronage. The patrons of current ghats are Marathas, Shindes (Scindias), Holkars, Bhonsles, Peshwes (Peshwas), and Maharajas of Benares. Many ghats are associated with legends or mythologies while other ghats have private histories and users. A morning boat ride on the Ganges along the ghats is a popular visitor attraction.
+      </ul>
+    </nav>
+  </header>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/varanasi/ghat.jpeg" alt="Product Image">
+    </div>
+
+    <div class="product-details">
+      <div class="product-name">Ganges River Ghats</div>
+      <div class="product-description">
+        The ghats along the Ganges River are the heart of Varanasi. Witness the spiritual rituals, ceremonies, and
+        bathing rituals that take place at sunrise and sunset. Most of the ghats in Varanasi were rebuilt in the 18th
+        century under the maratha patronage. The patrons of current ghats are Marathas, Shindes (Scindias), Holkars,
+        Bhonsles, Peshwes (Peshwas), and Maharajas of Benares. Many ghats are associated with legends or mythologies
+        while other ghats have private histories and users. A morning boat ride on the Ganges along the ghats is a
+        popular visitor attraction.
+      </div>
     </div>
   </div>
-</div>
-<div class="product-container">
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/temple.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Kashi Vishwanath Temple</div>
       <div class="product-description">
-        One of the most revered Hindu temples in India, dedicated to Lord Shiva. It's known for its intricate architecture and spiritual significance.
-        The Kashi Vishwanath Temple is a famous Hindu temple dedicated to Lord Shiva. It is located in Vishwanath Gali, near Varanasi, Uttar Pradesh, India. The temple is one of the most sacred pilgrimage sites for Shaivites and is among the twelve Jyotirlinga, shrines which are said to be the most sacred abodes of Shiva. Standing on the western banks of the Ganges, the presiding deity is known by the names Shri Vishwanath and Vishweshwara (IAST: Vishveshvara or Vishveshvur), literally meaning Lord of the Universe.
+        One of the most revered Hindu temples in India, dedicated to Lord Shiva. It's known for its intricate
+        architecture and spiritual significance.
+        The Kashi Vishwanath Temple is a famous Hindu temple dedicated to Lord Shiva. It is located in Vishwanath Gali,
+        near Varanasi, Uttar Pradesh, India. The temple is one of the most sacred pilgrimage sites for Shaivites and is
+        among the twelve Jyotirlinga, shrines which are said to be the most sacred abodes of Shiva. Standing on the
+        western banks of the Ganges, the presiding deity is known by the names Shri Vishwanath and Vishweshwara (IAST:
+        Vishveshvara or Vishveshvur), literally meaning Lord of the Universe.
       </div>
     </div>
   </div>
-<div class="product-container">
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/sarnath.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Sarnath</div>
       <div class="product-description">
-        A significant Buddhist pilgrimage site where Lord Buddha gave his first sermon. Explore ancient stupas, monasteries, and the Ashoka Pillar.
-        Sarnath is where, circa 528 BCE, at 35 years of age, Gautama Buddha taught his first sermon after attaining enlightenment at Bodh Gaya. It is also where the Buddhist sangha first came into existence as a result of the enlightenment of his first five disciples (Kaundinya, Assaji, Bhaddiya, Vappa and Mahanama).
+        A significant Buddhist pilgrimage site where Lord Buddha gave his first sermon. Explore ancient stupas,
+        monasteries, and the Ashoka Pillar.
+        Sarnath is where, circa 528 BCE, at 35 years of age, Gautama Buddha taught his first sermon after attaining
+        enlightenment at Bodh Gaya. It is also where the Buddhist sangha first came into existence as a result of the
+        enlightenment of his first five disciples (Kaundinya, Assaji, Bhaddiya, Vappa and Mahanama).
       </div>
     </div>
   </div>
-<div class="product-container">
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/boat ride.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Boat Ride on Ganges</div>
       <div class="product-description">
-        Experience the tranquility of the Ganges by taking a boat ride during sunrise or sunset. It offers a unique view of the ghats and the rituals taking place. The best part of enjoying River Ganges is taking up a boat ride on the river. River Ganges run through the city and there are numerous ghats that connect the river to the land. In each ghat, you can find numerous boats waiting to be hired
+        Experience the tranquility of the Ganges by taking a boat ride during sunrise or sunset. It offers a unique view
+        of the ghats and the rituals taking place. The best part of enjoying River Ganges is taking up a boat ride on
+        the river. River Ganges run through the city and there are numerous ghats that connect the river to the land. In
+        each ghat, you can find numerous boats waiting to be hired
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/arti.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Evening Ganga Aarti</div>
       <div class="product-description">
-        Attend the mesmerizing Ganga Aarti ceremony at Dashashwamedh Ghat, where priests perform rituals with fire lamps, incense, and chants.
-        Every evening, priests of Varanasi perform an elaborate and extremely beautiful aarti on the ghats of Ganga. The most prominent of these ghats is Dashashwamedh Ghat which is located right next to the Kashi Vishwanath Temple. The other ghats where people can watch the Varanasi aarti are Assi Ghat and Rajendra Prasad ghat.At Dashashwamedh ghat, one moment there's hustle-bustle about finding the perfect place to watch the aarti, and the other moment the entire city falls silent when a shankh (conch) is blown. The shankh heralds that the aarti is beginning and it draws everyone's attention. Since the Ganga aarti of Banaras is for the River Ganga, a statue of Goddess Ganga is placed in the centre at one of the many raised platforms. With the sound of bells and chants and lighting of incense sticks and diyas, the aarti is carried on.
+        Attend the mesmerizing Ganga Aarti ceremony at Dashashwamedh Ghat, where priests perform rituals with fire
+        lamps, incense, and chants.
+        Every evening, priests of Varanasi perform an elaborate and extremely beautiful aarti on the ghats of Ganga. The
+        most prominent of these ghats is Dashashwamedh Ghat which is located right next to the Kashi Vishwanath Temple.
+        The other ghats where people can watch the Varanasi aarti are Assi Ghat and Rajendra Prasad ghat.At
+        Dashashwamedh ghat, one moment there's hustle-bustle about finding the perfect place to watch the aarti, and the
+        other moment the entire city falls silent when a shankh (conch) is blown. The shankh heralds that the aarti is
+        beginning and it draws everyone's attention. Since the Ganga aarti of Banaras is for the River Ganga, a statue
+        of Goddess Ganga is placed in the centre at one of the many raised platforms. With the sound of bells and chants
+        and lighting of incense sticks and diyas, the aarti is carried on.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/sari.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Banarasi Sari Shopping</div>
       <div class="product-description">
-        The saris are among the finest saris in India and are known for their gold and silver brocade or zari, fine silk and opulent embroidery. The saris are made of finely woven silk and are decorated with intricate designs, and, because of these engravings, are relatively heavy.
-        Their special characteristics include intricate intertwining floral and foliate motifs, kalga and bel, a string of upright leaves called jhallar at the outer, edge of border is a characteristic of these saris. Other features are gold work, compact weaving, figures with small details, metallic visual effects, pallus, jal (a net like pattern), and mina work.The saris are often part of an Indian bride's trousseau.
+        The saris are among the finest saris in India and are known for their gold and silver brocade or zari, fine silk
+        and opulent embroidery. The saris are made of finely woven silk and are decorated with intricate designs, and,
+        because of these engravings, are relatively heavy.
+        Their special characteristics include intricate intertwining floral and foliate motifs, kalga and bel, a string
+        of upright leaves called jhallar at the outer, edge of border is a characteristic of these saris. Other features
+        are gold work, compact weaving, figures with small details, metallic visual effects, pallus, jal (a net like
+        pattern), and mina work.The saris are often part of an Indian bride's trousseau.
 
-        Depending on the intricacy of its designs and patterns, a sari can take from 15 days to a month and sometimes up to six months to complete. Banarasi saris are mostly worn by Indian women on important occasions such as when attending a wedding and are expected to be complemented by the woman's best jewellery
+        Depending on the intricacy of its designs and patterns, a sari can take from 15 days to a month and sometimes up
+        to six months to complete. Banarasi saris are mostly worn by Indian women on important occasions such as when
+        attending a wedding and are expected to be complemented by the woman's best jewellery
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/fort.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Ramnagar Fort</div>
       <div class="product-description">
-        A historic fort located on the opposite bank of the Ganges. It houses a museum with antique artifacts, vintage cars, and a unique collection of weapons.
-        The Ramnagar Fort is a fortification in Ramnagar, Varanasi, India. It is located near the Ganges on its eastern bank, opposite to the Tulsi Ghat. The sandstone structure was built in the Rajputana style in 1750 by Kashi Naresh Maharaja Balwant Singh. The current king and the resident of the fort is Anant Narayan Singh, who is also known as the Maharaja of Benares even though this royal title has been abolished since 1971.
+        A historic fort located on the opposite bank of the Ganges. It houses a museum with antique artifacts, vintage
+        cars, and a unique collection of weapons.
+        The Ramnagar Fort is a fortification in Ramnagar, Varanasi, India. It is located near the Ganges on its eastern
+        bank, opposite to the Tulsi Ghat. The sandstone structure was built in the Rajputana style in 1750 by Kashi
+        Naresh Maharaja Balwant Singh. The current king and the resident of the fort is Anant Narayan Singh, who is also
+        known as the Maharaja of Benares even though this royal title has been abolished since 1971.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/bhavan.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Bharat Kala Bhavan</div>
       <div class="product-description">
-        Bharat Kala Bhavan is a university museum located in Banaras Hindu University, Varanasi, India. It has been instrumental in the dissemination of knowledge on Indian art and culture. It is one of the important touristic attractions in the Banaras Hindu University and in the city of Varanasi.
-        The concept for Bharat Kala Bhavan came to fruition with establishment of Bharatiya Lalit Kala Parishad on 1 January 1920 in a wing in Godowlia, Varanasi. Between 1920 and 1962, the museum's collection was shifted to several locations within Varanasi before Jawaharlal Nehru laid foundation of the existing museum building in 1950 and the museum was, then shifted to its existing location in the Banaras Hindu University in 1962. Mahatma Gandhi visited Bharat Kala Bhavan thrice and in his final trip he inscribed "संग्रह बहुत अच्छा है" ("the collection is very good")
+        Bharat Kala Bhavan is a university museum located in Banaras Hindu University, Varanasi, India. It has been
+        instrumental in the dissemination of knowledge on Indian art and culture. It is one of the important touristic
+        attractions in the Banaras Hindu University and in the city of Varanasi.
+        The concept for Bharat Kala Bhavan came to fruition with establishment of Bharatiya Lalit Kala Parishad on 1
+        January 1920 in a wing in Godowlia, Varanasi. Between 1920 and 1962, the museum's collection was shifted to
+        several locations within Varanasi before Jawaharlal Nehru laid foundation of the existing museum building in
+        1950 and the museum was, then shifted to its existing location in the Banaras Hindu University in 1962. Mahatma
+        Gandhi visited Bharat Kala Bhavan thrice and in his final trip he inscribed "संग्रह बहुत अच्छा है" ("the
+        collection is very good")
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/kachori.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Kachori and Jalebi at Kashi Chaat Bhandar</div>
       <div class="product-description">
-        Indulge in Varanasi's famous street food by trying Kachori and Jalebi at Kashi Chaat Bhandar, a local culinary hotspot.
+        Indulge in Varanasi's famous street food by trying Kachori and Jalebi at Kashi Chaat Bhandar, a local culinary
+        hotspot.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/varanasi/bathing.jpg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Bathing Ghats</div>
       <div class="product-description">
-        Ghats in Varanasi are riverfront steps leading to the banks of the Ganges river. The city has 84 ghats. Most of the ghats are bathing and puja ceremonial ghats, while two ghats, Manikarnika and Harishchandra, are used exclusively as cremation sites. Most of the ghats in Varanasi were rebuilt in the 18th century under the maratha patronage. The patrons of current ghats are Marathas, Shindes (Scindias), Holkars, Bhonsles, Peshwes (Peshwas), and Maharajas of Benares. Many ghats are associated with legends or mythologies while other ghats have private histories and users. A morning boat ride on the Ganges along the ghats is a popular visitor attraction.
+        Ghats in Varanasi are riverfront steps leading to the banks of the Ganges river. The city has 84 ghats. Most of
+        the ghats are bathing and puja ceremonial ghats, while two ghats, Manikarnika and Harishchandra, are used
+        exclusively as cremation sites. Most of the ghats in Varanasi were rebuilt in the 18th century under the maratha
+        patronage. The patrons of current ghats are Marathas, Shindes (Scindias), Holkars, Bhonsles, Peshwes (Peshwas),
+        and Maharajas of Benares. Many ghats are associated with legends or mythologies while other ghats have private
+        histories and users. A morning boat ride on the Ganges along the ghats is a popular visitor attraction.
       </div>
     </div>
-</div>
+  </div>
 </body>
+
 </html>

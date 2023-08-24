@@ -248,7 +248,7 @@ section {
     justify-content: center;
     align-items: center;
     transform: translateY(80px);
-    margin-bottom: 12px;
+    margin-bottom: 120px;
 }
 
 .slider-navigation .nav-btn {
@@ -563,7 +563,7 @@ section {
 
 .carousel.dragging .card {
     cursor: grab;
-    webkit-user-select: none;
+    /* webkit-user-select: none; */
 }
 
 .carousel :where(.card, .img) {
@@ -618,14 +618,6 @@ section {
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 }
-
-@media screen and (max-width: 600px) {
-    .wrapper .carousel {
-        /* Adjust grid columns for even smaller screens */
-        /* grid-auto-columns: 100%; */
-    }
-}
-
 
 
 @media (max-width:1040px) {

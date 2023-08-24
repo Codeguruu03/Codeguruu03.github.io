@@ -1,205 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: aliceblue;
-  }
-  header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.logo .brand {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: aliceblue;
+    }
 
-.navigation-items {
-    list-style: none;
-    display: flex;
-    
-}
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
 
-.navigation-items li {
-    margin-right: 20px;
-    
-}
-    
-.navigation-items a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+    .logo .brand {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
 
-.navigation-items a:hover {
-    color: #ec154e;
-}
+    .navigation-items {
+      list-style: none;
+      display: flex;
 
-  .product-container {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding-top: 40px;
-  }
+    }
 
-  .product-image {
-    flex: 1;
-    max-width: 50%;
-  }
+    .navigation-items li {
+      margin-right: 20px;
 
-  .product-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 30px;
-  }
+    }
 
-  .product-details {
-    flex: 1;
-    padding: 20px;
-  }
+    .navigation-items a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-  .product-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+    .navigation-items a:hover {
+      color: #ec154e;
+    }
 
-  .product-description {
-    font-size: 16px;
-    color: #555;
-  }
-</style>
-<title>Gangtok</title>
+    .product-container {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 40px;
+    }
+
+    .product-image {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 30px;
+    }
+
+    .product-details {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .product-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+
+  <title>Gangtok</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="/assets/images/logo.png" alt="Company Image" width="300" height="100">
-        </div>
-        
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        
-        <nav class="navigation">
-            <ul class='navigation-items'>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/src/html/unlogged/aboutus.html" class="active">About Us</a></li>
-                <li><a href="/src/html/gallery.html">Gallery</a></li>
-                <li><a href="/src/html/contactus.html" target="_blank" rel="noopener">Contact</a></li>
-                <!-- <li><a href="http://127.0.0.1:5000" target="_blank" rel="noopener">LOGIN</a></li>
+  <header>
+    <div class="logo">
+      <img src="/assets/images/logo.png" alt="Company Image" width="300" height="100">
+    </div>
+
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <nav class="navigation">
+      <ul class='navigation-items'>
+        <li><a href="/deep-home.html">Home</a></li>
+        <li><a href="/src/html/aboutus.html" class="active">About Us</a></li>
+        <li><a href="/src/html/gallery.html">Gallery</a></li>
+        <li><a href="/src/html/contactus.html" target="_blank" rel="noopener">Contact</a></li>
+        <!-- <li><a href="http://127.0.0.1:5000" target="_blank" rel="noopener">LOGIN</a></li>
                 <li><a href="http://127.0.0.1:5500" target="_blank" rel="noopener">SIGN UP!</a></li> -->
-            </ul>
-        </nav>
-    </header>
-<div class="product-container">
-  <div class="product-image">
-    <img src="/assets/images/vocal for local/gangtok/lake.jpeg" alt="Product Image">
-  </div>
-  <div class="product-details">
-    <div class="product-name">Tsomgo Lake (Changu Lake)</div>
-    <div class="product-description">   
-        This glacial lake located at an altitude of about 12,000 feet is surrounded by snow-capped mountains and is a popular tourist destination. It freezes during the winter months and offers breathtaking views.
-    </div>
-  </div>
-</div>
-<div class="product-container">
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
     <div class="product-image">
-      <img src="/assets/images/vocal for local/gangtok/rumtek.jpeg" alt="Product Image">
+      <img src="/assets/images/vocal for local/gangtok/lake.jpeg" alt="Product Image">
     </div>
+    
     <div class="product-details">
-      <div class="product-name">Rumtek Monastery</div>
+      <div class="product-name">Tsomgo Lake (Changu Lake)</div>
       <div class="product-description">
-        Also known as the Dharma Chakra Centre, this monastery is one of the most significant and largest monasteries in Sikkim. It's a hub of Buddhist activity and artistry.
+        This glacial lake located at an altitude of about 12,000 feet is surrounded by snow-capped mountains and is a
+        popular tourist destination. It freezes during the winter months and offers breathtaking views.
       </div>
     </div>
   </div>
-<div class="product-container">
+  
+  <div class="product-container">
+    <div class="product-image">
+      <img src="/assets/images/vocal for local/gangtok/rumtek.jpeg" alt="Product Image">
+    </div>
+    
+    <div class="product-details">
+      <div class="product-name">Rumtek Monastery</div>
+      <div class="product-description">
+        Also known as the Dharma Chakra Centre, this monastery is one of the most significant and largest monasteries in
+        Sikkim. It's a hub of Buddhist activity and artistry.
+      </div>
+    </div>
+  </div>
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/institute.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Namgyal Institute of Tibetology</div>
       <div class="product-description">
-        This institute is dedicated to the study of Tibetan language, culture, and Buddhism. It houses a vast collection of rare artifacts, manuscripts, and thangkas (Tibetan Buddhist paintings).
+        This institute is dedicated to the study of Tibetan language, culture, and Buddhism. It houses a vast collection
+        of rare artifacts, manuscripts, and thangkas (Tibetan Buddhist paintings).
       </div>
     </div>
   </div>
-<div class="product-container">
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/ganesh.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Ganesh Tok</div>
       <div class="product-description">
-        A small temple dedicated to Lord Ganesha, Ganesh Tok offers panoramic views of the city and surrounding mountains. It's a serene spot for meditation and relaxation.
+        A small temple dedicated to Lord Ganesha, Ganesh Tok offers panoramic views of the city and surrounding
+        mountains. It's a serene spot for meditation and relaxation.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/enchey.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Enchey Monastery</div>
       <div class="product-description">
-        This monastery, nestled on a hilltop, is around 200 years old and is known for its religious significance and intricate architecture.
+        This monastery, nestled on a hilltop, is around 200 years old and is known for its religious significance and
+        intricate architecture.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/banjhakri.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Banjhakri Falls and Energy Park</div>
       <div class="product-description">
-        A beautiful waterfall surrounded by lush greenery, this park showcases the traditional culture and folklore of the Lepcha community.
+        A beautiful waterfall surrounded by lush greenery, this park showcases the traditional culture and folklore of
+        the Lepcha community.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/tashi.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Tashi Viewpoint</div>
       <div class="product-description">
-        From here, you can get a stunning view of the Kanchenjunga mountain range on clear days. It's particularly beautiful during sunrise.
+        From here, you can get a stunning view of the Kanchenjunga mountain range on clear days. It's particularly
+        beautiful during sunrise.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/mg marg.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">M.G. Marg</div>
       <div class="product-description">
-        The main shopping street of Gangtok, M.G. Marg is a pedestrian-only zone lined with shops, restaurants, and cafes. It's a great place to enjoy local cuisine and shop for souvenirs.
+        The main shopping street of Gangtok, M.G. Marg is a pedestrian-only zone lined with shops, restaurants, and
+        cafes. It's a great place to enjoy local cuisine and shop for souvenirs.
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/hanuman.jpeg" alt="Product Image">
     </div>
@@ -209,17 +226,19 @@
         Another temple dedicated to Lord Hanuman, this site offers panoramic views of Gangtok and the surrounding hills
       </div>
     </div>
-</div>
-<div class="product-container">
+  </div>
+  <div class="product-container">
     <div class="product-image">
       <img src="/assets/images/vocal for local/gangtok/flower.jpeg" alt="Product Image">
     </div>
     <div class="product-details">
       <div class="product-name">Flower Exhibition Centre</div>
       <div class="product-description">
-        If you're interested in flowers, you'll enjoy this center that showcases a variety of colorful blooms and orchids. The annual flower show held here is a major attraction.
+        If you're interested in flowers, you'll enjoy this center that showcases a variety of colorful blooms and
+        orchids. The annual flower show held here is a major attraction.
       </div>
     </div>
-</div>
+  </div>
 </body>
+
 </html>

@@ -1,11 +1,11 @@
 THINGS TO FIX!!!
 
-1) LOGIN AND SIGNUP BUTTON FIX              
+1) LOGIN AND SIGNUP BUTTON FIX              (completed)
 2) ADD FOOTER                               (COMPLETED -Deepesh)
-3) CHANGE HOMEPAGE VIDEOS
+3) CHANGE HOMEPAGE VIDEOS                   (Completed)
 4) FIX BLUISH STUFF ON VIDEOS               (Completed- Krish)
-5) FLESH OUT GALLARY 
-6) FINISH ABOUT US PAGE ONCE AND FOR ALL
+5) FLESH OUT GALLARY                        (completed)
+6) FINISH ABOUT US PAGE ONCE AND FOR ALL    (Completed)
 7) statue of unity
 8) contact us page fixed                    (Completed -Deepesh)
 9) Add about india page                     (Completed -Deepesh)
@@ -17,5 +17,5 @@ kailasa temple
 spiti valley kee monastery
 atal tunnel
 
-youtube page par transfer
+youtube page par transfer                   (COMPLETED)
 

@@ -27,6 +27,11 @@ header {
     font-weight: bold;
 }
 
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
 .navigation-items {
     list-style: none;
     display: flex;
@@ -80,6 +85,12 @@ img{
 .img-item{
     margin: 0.3rem;
 }
+
+.img-item img{
+    width: 100px;
+    height: auto;
+}
+
 .img-item:nth-child(1),
 .img-item:nth-child(2),
 .img-item:nth-child(3){
