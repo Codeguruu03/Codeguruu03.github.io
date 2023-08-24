@@ -113,7 +113,7 @@ header {
 
 .box-item p {
     margin-top: 10px;
-    text-align: center;
+    text-align: left;
     color: #666;
 }
 
@@ -153,7 +153,7 @@ header {
     transition: background-color 0.3s;
 }
 
-.box-item-end a {
+/* .box-item-end a {
     display: inline-block;
     margin-top: 10px;
     padding: 5px 15px;
@@ -162,4 +162,4 @@ header {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
+} */
