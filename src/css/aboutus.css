@@ -13,6 +13,11 @@ header {
     padding: 10px 20px;
 }
 
+.logo img {
+    width: auto;
+    height: 50px;
+}
+
 .logo .brand {
     color: #fff;
     text-decoration: none;
@@ -101,12 +106,12 @@ body {
 }
 
 .about-us h2 {
-    color: #ac5252;
+    color: #4b1717;
     margin-bottom: 20px;
 }
 
 .about-us p {
-    color: #ac3d3d;
+    color: #5f2525;
     font-size: 18px;
     line-height: 1.5;
 }
