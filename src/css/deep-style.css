@@ -563,6 +563,10 @@ section {
     display: none;
 }
 
+.wrapper .carousel a{
+    text-decoration: none;
+}
+
 .carousel.no-transition {
     scroll-behavior: auto;
 }
