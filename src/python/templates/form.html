@@ -1,118 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Form</title>
-
-</head>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: #f2f2f2;
-    }
-
-    .background-image {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('https://www.thegrandindianroute.com/static/seo/blog/b17/2.jpg'); /* Replace with your image URL */
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
-
-    .container {
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-        padding: 30px;
-        width: 300px;
-        text-align: center;
-        backdrop-filter: blur(0px);
-    }
-
-    h1 {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    /* Add margin to create space between h1 and label */
-    label[for="username"] {
-        margin-bottom: 10px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    label {
-        margin-bottom: 5px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    input[type="submit"] {
-        background-color: #3498db;
-        color: white;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #2980b9;
-    }
-</style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-image: url('https://wallpaper.dog/large/20501283.jpg');
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                backdrop-filter: blur(0.1px);
+            }
+    
+            .form {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                width: 400px;
+            }
+    
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 28px;
+                color: #fff;
+                font-size:60px;
+            }
+    
+            label {
+                display: block;
+                font-weight: bold;
+                margin-top: 10px;
+                color: #fff;
+            }
+    
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            select {
+                width: 150%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+    
+            input[type="submit"] {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-top: 20px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
 
 <body>
+    <div>
     <h1>Travel Form</h1>
     <form class="travel-form" method="POST" action="/src/backend/stash">
         <label for="full-name">Full Name:</label>
         <input type="text" id="full-name" name="full-name" required>
-
+    
         <label for="country-code">Country Code:</label>
         <input type="text" id="country-code" name="country-code" required>
-
+    
         <label for="phone-number">Phone Number:</label>
         <input type="tel" id="phone-number" name="phone-number" required>
-
+    
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-
+    
         <label for="nationality">Nationality:</label>
         <input type="text" id="nationality" name="nationality" required>
-
+    
         <label for="num-tourists">Number Of Guests:</label>
         <input type="text" id="num-tourists" name="num-tourists" required>
-
+    
         <label for="package">Package:</label>
-        <input type="text" id="package" name="package" required>
-
+        <select id="package" name="package" required>
+            <option value="" disabled selected>Select a Package</option>
+            <option value="Package 1">Package 1</option>
+            <option value="Package 2">Package 2</option>
+            <option value="Package 3">Package 3</option>
+            <option value="Package 3">Package 4</option>
+            <option value="Package 3">Package 5</option>
+            <!-- Add more options as needed -->
+        </select>
+    
         <label for="month-of-travel">Month Of Travel:</label>
-        <input type="text" id="month-of-travel" name="month-of-travel" required>
-
+        <select id="month-of-travel" name="month-of-travel" required>
+            <option value="" disabled selected>Select a Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="March">April</option>
+            <option value="March">May</option>
+            <option value="March">June</option>
+            <option value="March">July</option>
+            <option value="March">August</option>
+            <option value="March">September</option>
+            <option value="March">October</option>
+            <option value="March">November</option>
+            <option value="March">December</option>
+            
+        </select>
+    
         <input type="submit" value='Register'>
     </form>
+    
+</div>
 </body>
 </html>
