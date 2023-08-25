@@ -609,10 +609,12 @@
         const carousel = document.querySelector(".carousel");
         const carousel2 = document.querySelector(".carousel2");
         const carousel3 = document.querySelector(".Explore .carousel");
+        const carousel4 = document.querySelector(".fifsection .celeb");
         const firstCardWidth = carousel.querySelector(".card").offsetWidth;
         const arrowBtns1 = document.querySelectorAll(".popularpackages .wrapper i");
         const arrowBtns2 = document.querySelectorAll(".explorevisit .wrapper i");
         const arrowBtns3 = document.querySelectorAll(".Explore .wrapper i");
+        const arrowBtns4 = document.querySelectorAll(".fifsection .celeb i");
         const carouselChildrens = [...carousel.children];
 
         let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
@@ -647,6 +649,11 @@
             });
         });
         arrowBtns3.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel3.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+            });
+        });
+        arrowBtns4.forEach(btn => {
             btn.addEventListener("click", () => {
                 carousel3.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
             });
@@ -688,13 +695,48 @@
             clearTimeout(timeoutId);
             if (!wrapper.matches(":hover")) autoPlay();
         }
+        const infiniteScroll2 = () => {
+            // If the carousel is at the beginning, scroll to the end
+            if (carousel2.scrollLeft === 0) {
+                carousel2.classList.add("no-transition");
+                carousel2.scrollLeft = carousel2.scrollWidth - (2 * carousel2.offsetWidth);
+                carousel2.classList.remove("no-transition");
+            }
+            // If the carousel is at the end, scroll to the beginning
+            else if (Math.ceil(carousel2.scrollLeft) === carousel2.scrollWidth - carousel2.offsetWidth) {
+                carousel2.classList.add("no-transition");
+                carousel2.scrollLeft = carousel2.offsetWidth;
+                carousel2.classList.remove("no-transition");
+            }
 
+            // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+            clearTimeout(timeoutId);
+            if (!wrapper.matches(":hover")) autoPlay();
+        }
         const autoPlay = () => {
             if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
             // Autoplay the carousel after every 2500 ms
             timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
         }
+        const autoPlay2 = () => {
+            if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+            // Autoplay the carousel after every 2500 ms
+            timeoutId = setTimeout(() => carousel2.scrollLeft += firstCardWidth, 2500);
+        }
+        const autoPlay3 = () => {
+            if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+            // Autoplay the carousel after every 2500 ms
+            timeoutId = setTimeout(() => carousel3.scrollLeft += firstCardWidth, 2500);
+        }
+        const autoPlay4 = () => {
+            if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+            // Autoplay the carousel after every 2500 ms
+            timeoutId = setTimeout(() => carousel4.scrollLeft += firstCardWidth, 2500);
+        }
         autoPlay();
+        autoPlay2();
+        autoplay3();
+        autoPlay4();
 
         carousel.addEventListener("mousedown", dragStart);
         carousel.addEventListener("mousemove", dragging);
@@ -702,6 +744,12 @@
         carousel.addEventListener("scroll", infiniteScroll);
         wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
         wrapper.addEventListener("mouseleave", autoPlay);
+        carousel2.addEventListener("mousedown", dragStart);
+        carousel2.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel2.addEventListener("scroll", infiniteScroll2);
+        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+        wrapper.addEventListener("mouseleave", autoPlay2);
 
         //user testimony ka slider ka javascript
 
@@ -757,9 +805,12 @@
 
     <!-- user testimony ka image slider -->
     <section class="fifthsection">
+        <h2>
+            User Testimony
+        </h2>
         <div class="celeb">
           <i id="left" class="fa-solid fa-angle-left"></i>
-          <ul class="celebrity">
+          <ul class="celebrity carousel4">
             <li class="withus">
               <div class="img"><img src="/assets/galleryimages/East/east2.jpeg" alt="img" draggable="false"></div>
               <h2>Blanche Pearson</h2>
