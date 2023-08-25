@@ -345,6 +345,12 @@ section {
     align-items: center;
 }
 
+.celeb-button{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
 .readmore1 {
     padding: 10px 20px;
     background-color: #3c9ce600;
