@@ -635,12 +635,12 @@
         const carousel = document.querySelector(".carousel");
         const carousel2 = document.querySelector(".carousel2");
         const carousel3 = document.querySelector(".Explore .carousel");
-        const carousel4 = document.querySelector(".fifsection .celeb");
+        const carousel4 = document.querySelector(".fifthsection .celeb");
         const firstCardWidth = carousel.querySelector(".card").offsetWidth;
         const arrowBtns1 = document.querySelectorAll(".popularpackages .wrapper i");
         const arrowBtns2 = document.querySelectorAll(".explorevisit .wrapper i");
         const arrowBtns3 = document.querySelectorAll(".Explore .wrapper i");
-        const arrowBtns4 = document.querySelectorAll(".fifsection .celeb i");
+        const arrowBtns4 = document.querySelectorAll(".celeb i");
         const carouselChildrens = [...carousel.children];
 
         let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
@@ -761,13 +761,13 @@
         }
         autoPlay();
         autoPlay2();
-        autoplay3();
+        // autoplay3();
         autoPlay4();
 
         carousel.addEventListener("mousedown", dragStart);
         carousel.addEventListener("mousemove", dragging);
         document.addEventListener("mouseup", dragStop);
-        carousel.addEventListener("scroll", infiniteScroll);
+        carousel.addEventListener("scroll", infiniteScroll  );
         wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
         wrapper.addEventListener("mouseleave", autoPlay);
         carousel2.addEventListener("mousedown", dragStart);
