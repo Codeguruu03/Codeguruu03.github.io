@@ -1006,3 +1006,29 @@ ul {
         width: 100%;
     }
 }
+.testimonial-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .testimonial-card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+  }
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    object-fit: cover;
+  }
+  .testimonial-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
