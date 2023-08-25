@@ -56,7 +56,7 @@ header .navigation {
 
 header .navigation .navigation-items a {
     position: relative;
-    color: #fff;
+    color: #000000;
     font-size: 1.3em;
     font-weight: 500;
     text-decoration: none;
@@ -99,7 +99,7 @@ header .navigation .navigation-items .login-btn {
 }
 
 header .navigation .navigation-items .login-btn a {
-    color: #fff;
+    color: #000000;
     padding-right: 30px;
     text-align: center;
 
@@ -114,7 +114,7 @@ header .navigation .navigation-items .register-btn {
 }
 
 header .navigation .navigation-items .register-btn a {
-    color: rgb(249, 247, 247);
+    color: rgb(0, 0, 0);
     padding-right: 28px;
     text-align: center;
 }
@@ -348,6 +348,14 @@ section {
 .aboutindia2 {
     margin: 22px 0;
     font-family: sans-serif;
+    text-align: center;
+}
+
+.border5{
+    width: 160px;
+    height:5px;
+    background: #6ab04c;
+    margin: 26px auto;
 }
 
 .button-container {
@@ -363,19 +371,27 @@ section {
     align-items: right;
 }
 
-.readmore1 {
+.readmore1{
     padding: 10px 20px;
-    background-color: #3c9ce600;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s; 
+    background-color: #95c7ed;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.readmore1 a {
+    color: black;
 }
 
 .readmore1:hover {
-    background-color: #4697d6;
+    background-color: #5ea4d8;
     transform: scale(1.05);
 }
 
@@ -607,17 +623,40 @@ section {
 
 .popularpackages .packages {
     font-size: 28px;
-    text-decoration: underline;
-
+    /* text-decoration: underline; */
+    text-align: center;
 }
+
+.border1{
+    width: 320px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
 .popularpackages{
     /* background-color: yellow; */
     padding: 85px 85px 85px 85px;
 }
 
 .explorevisit .explorebefore h2 {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 38px;
+    text-align: center;
+}
+
+.border2{
+    width: 390px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.border3{
+    width: 300px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
 }
 
 /* .explorevisit #left{
@@ -737,10 +776,16 @@ section {
 
 h2.text-center {
     margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
+    font-size: 38px;
+    color: #000000;
 }
 
+.border4{
+    width: 260px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
 ul.flex.flexWrap {
     display: flex;
     flex-wrap: wrap;
@@ -808,127 +853,72 @@ li:hover {
 }
 
 /* user testimonhy ka slider ke design */
-.fifthsection {
-    display: flex;
-    padding: 0 35px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    /* background: linear-gradient(to left top, #031A9A, #8B53FF); */
+.testimonials{
+    padding: 40px 0;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
   }
 
-  .fifthsection h2{
-    margin-top: -442px;
-    font-size: 32px;
-    text-decoration: underline;
-    white-space: nowrap;
+  .testimonials .inner h1{
+    font-size: 38px;
   }
-  .celeb {
-    /* max-width: 1100px; */
-    width: 100%;
-    position: relative;
-    margin-left: -115px;
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
   }
-  .celeb i {
-    top: 50%;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    font-size: 1.25rem;
-    position: absolute;
-    text-align: center;
-    line-height: 50px;
-    background: #eede83;
-    border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-    transform: translateY(-50%);
-    transition: transform 0.1s linear;
-  }
-  .celeb i:active{
-    transform: translateY(-50%) scale(0.85);
-  }
-  .celeb i:first-child{
-    left: -22px;
-  }
-  .celeb i:last-child{
-    right: -22px;
-  }
-  .celeb .celebrity{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    border-radius: 8px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-  .celebrity::-webkit-scrollbar {
-    display: none;
-  }
-  .celebrity.no-transition {
-    scroll-behavior: auto;
-  }
-  .celebrity.dragging {
-    scroll-snap-type: none;
-    scroll-behavior: auto;
-  }
-  .celebrity.dragging .withus {
-    cursor: grab;
-    user-select: none;
-  }
-  .celebrity :where(.withus, .img) {
+  
+  .border{
+    width: 250px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+  } 
+  
+  .row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
   }
-  .celebrity .withus {
-    scroll-snap-align: start;
-    height: 342px;
-    list-style: none;
-    background: #d4d6ee;
-    cursor: pointer;
-    padding-bottom: 15px;
-    flex-direction: column;
-    border-radius: 8px;
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px; 
   }
-  .celebrity .withus .img {
-    background: #8B53FF;
-    height: 148px;
-    width: 148px;
+  .testimonial{
+    background: #fff;
+    padding: 30px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
   }
-  .withus .img img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #fff;
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
   }
-  .celebrity .withus h2 {
-    font-weight: 500;
-    font-size: 1.56rem;
-    margin: 30px 0 5px;
-  }
-  .celebrity .withus span {
-    color: #6A6D78;
-    font-size: 1.31rem;
-    text-align: center;
-    padding: 0 10px;
+  .stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
   }
   
-  @media screen and (max-width: 900px) {
-    .celeb .celebrity {
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
   }
-  
-  @media screen and (max-width: 600px) {
-    .celeb .celebrity {
-      grid-auto-columns: 100%;
-    }
   }
+  @media screen and (max-width:600px) {
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+    }
 
 
 /* FOOTER */

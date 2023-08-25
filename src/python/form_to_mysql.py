@@ -58,7 +58,7 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'NerdyGamer611',
+    'password': 'naman123!@#G',
     'database': 'travelbuddy'
 }
 
