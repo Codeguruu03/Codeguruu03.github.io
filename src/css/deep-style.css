@@ -321,8 +321,9 @@ section {
 .aboutindia {
     font-family: 'Borel', cursive;
     /* text-align: center; */
-    margin-top: 35px;
+    margin-top: -182px;
     /* background-color: rgb(232, 232, 149); */
+    margin-bottom: -240px;
 }
 
 @media screen and (min-width:1040px) {
