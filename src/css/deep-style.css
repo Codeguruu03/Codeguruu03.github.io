@@ -115,7 +115,7 @@ header .navigation .navigation-items .register-btn a {
 
 
 section {
-    padding: 100px 7%;
+    padding: 50px 7%;
 }
 
 .home {
@@ -841,7 +841,7 @@ li:hover {
 
 /* user testimonhy ka slider ke design */
 .testimonials{
-    padding: 40px 0;
+    padding: 20px 0;
     background: #ffffff;
     color: #000000;
     text-align: center;
@@ -1008,7 +1008,7 @@ ul {
 .testimonial-section {
     display: flex;
     justify-content: space-around;
-    padding: 40px;
+    /* padding: 20px; */
     box-sizing: border-box;
   }
   .testimonial-card {
@@ -1020,9 +1020,8 @@ ul {
     width: 30%;
   }
   .testimonial-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 400px;
+    height: auto;
     margin: 0 auto 10px;
     object-fit: cover;
   }
@@ -1030,4 +1029,8 @@ ul {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
+  }
+  .blogs {
+    display: flex;
+    justify-content: center;
   }
