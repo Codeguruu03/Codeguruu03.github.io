@@ -1,21 +1,17 @@
 THINGS TO FIX!!!
 
-1) LOGIN AND SIGNUP BUTTON FIX              (completed)
-2) ADD FOOTER                               (COMPLETED -Deepesh)
-3) CHANGE HOMEPAGE VIDEOS                   (Completed)
-4) FIX BLUISH STUFF ON VIDEOS               (Completed- Krish)
-5) FLESH OUT GALLARY                        (completed)
-6) FINISH ABOUT US PAGE ONCE AND FOR ALL    (Completed)
-7) statue of unity
-8) contact us page fixed                    (Completed -Deepesh)
-9) Add about india page                     (Completed -Deepesh)
-
-
-taj mahl
-adi yogi
-kailasa temple
-spiti valley kee monastery
-atal tunnel
-
-youtube page par transfer                   (COMPLETED)
-
+1) logo change in home page:- arjun
+2) font change in home page :- komal
+3) video change ka kaam:- arjun
+4) home page ke section ke beechh ka space kam karna hai :- naman
+5) celebrate with us ka integration:- naman
+6) explore before you visit ke slider ki 4 images change hogi :- Naman
+7) user testimony ka slider paste karna hai home page par 
+8) har package ke andar photos dalegi:- Ramona
+9) sab page ke title change karne hai 
+10) celebrate with us ke niche show all ka button jodna hai:- deepesh 
+11) footer link fix karna hai :- Deepesh 
+12) blogs ke dabbe banenge :- Krish
+13) navigation bars add karna hai :- naman
+14) travel buddy ka form banana hai:- deepesh
+15) celebrate with us ki photo change karni hai:- Arjun and Ramona
