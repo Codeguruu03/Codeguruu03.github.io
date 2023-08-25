@@ -334,11 +334,20 @@ section {
 
 .aboutindia1 {
     font-size: 24px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-align: center;
+}
+
+.border5{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
 }
 
 .aboutindia2 {
     margin: 20px 0;
+    font-size: 18px;
 }
 
 .button-container {
@@ -353,15 +362,19 @@ section {
     align-items: right;
 }
 
-.readmore1 {
+.readmore1{
     padding: 10px 20px;
-    background-color: #3c9ce600;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.readmore1 a {
+    color: black;
 }
 
 .readmore1:hover {
@@ -597,17 +610,40 @@ section {
 
 .popularpackages .packages {
     font-size: 28px;
-    text-decoration: underline;
-
+    /* text-decoration: underline; */
+    text-align: center;
 }
+
+.border1{
+    width: 320px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
 .popularpackages{
     /* background-color: yellow; */
     padding: 85px 85px 85px 85px;
 }
 
 .explorevisit .explorebefore h2 {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 38px;
+    text-align: center;
+}
+
+.border2{
+    width: 390px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.border3{
+    width: 300px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
 }
 
 /* .explorevisit #left{
@@ -727,10 +763,16 @@ section {
 
 h2.text-center {
     margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
+    font-size: 38px;
+    color: #000000;
 }
 
+.border4{
+    width: 260px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
 ul.flex.flexWrap {
     display: flex;
     flex-wrap: wrap;
@@ -800,9 +842,13 @@ li:hover {
 /* user testimonhy ka slider ke design */
 .testimonials{
     padding: 40px 0;
-    background: #f1f1f1;
-    color: #434343;
+    background: #ffffff;
+    color: #000000;
     text-align: center;
+  }
+
+  .testimonials .inner h1{
+    font-size: 38px;
   }
   .inner{
     max-width: 1200px;
@@ -812,7 +858,7 @@ li:hover {
   }
   
   .border{
-    width: 160px;
+    width: 250px;
     height: 5px;
     background: #6ab04c;
     margin: 26px auto;
@@ -829,11 +875,11 @@ li:hover {
     box-sizing: border-box;
     padding: 15px; 
   }
-  .testimonials{
+  .testimonial{
     background: #fff;
     padding: 30px;
   }
-  .testimonials img{
+  .testimonial img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
