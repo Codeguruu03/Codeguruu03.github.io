@@ -340,9 +340,10 @@ section {
 
 .aboutindia1 {
     font-size: 24px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-family: serif;
     margin-top: 100px;
+    text-align: center;
 }
 
 .aboutindia2 {
@@ -1046,4 +1047,16 @@ ul {
   .blogs {
     display: flex;
     justify-content: center;
+  }
+
+  .blogs h1{
+    text-align: center;
+    font-size: 38px;
+    /* padding-left: 585px; */
+  }
+  .border6{
+    width: 120px;
+    height:5px;
+    background: #6ab04c;
+    margin: 26px auto;
   }
