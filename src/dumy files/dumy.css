@@ -1,119 +1,67 @@
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-* {
-  margin: 0;
+*{
+  margin:  0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family : "montserrat",sans-serif;
 }
-.fifthsection {
-  display: flex;
-  padding: 0 35px;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(to left top, #031A9A, #8B53FF);
-}
-.celeb {
-  max-width: 1100px;
-  width: 100%;
-  position: relative;
-}
-.celeb i {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
   text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
 }
-.celeb i:active{
-  transform: translateY(-50%) scale(0.85);
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
 }
-.celeb i:first-child{
-  left: -22px;
-}
-.celeb i:last-child{
-  right: -22px;
-}
-.celeb .celebrity{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.celebrity::-webkit-scrollbar {
-  display: none;
-}
-.celebrity.no-transition {
-  scroll-behavior: auto;
-}
-.celebrity.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.celebrity.dragging .withus {
-  cursor: grab;
-  user-select: none;
-}
-.celebrity :where(.withus, .img) {
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+} 
+
+.row{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
-.celebrity .withus {
-  scroll-snap-align: start;
-  height: 342px;
-  list-style: none;
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px; 
+}
+.testimonials{
   background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
+  padding: 30px;
 }
-.celebrity .withus .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
+.testimonials img{
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
-.withus .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
 }
-.celebrity .withus h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-}
-.celebrity .withus span {
-  color: #6A6D78;
-  font-size: 1.31rem;
+.stars{
+  color: #6ab04c;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 900px) {
-  .celeb .celebrity {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
 }
-
-@media screen and (max-width: 600px) {
-  .celeb .celebrity {
-    grid-auto-columns: 100%;
-  }
 }
+@media screen and (max-width:600px) {
+  .col{
+      flex: 100%;
+      max-width: 80%;
+  }
+  }
