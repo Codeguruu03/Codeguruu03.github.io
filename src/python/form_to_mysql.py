@@ -91,7 +91,7 @@ def submit():
     db_connection.close()
     
     flash("Data Saved, redirecting you to home page...")
-    return redirect("https://deepesh611.github.io/deep-home.html")
+    return redirect("http://127.0.0.1:5501/deep-home.html")
 
 if __name__ == "__main__":
     app.run(debug=True,port = 5550)

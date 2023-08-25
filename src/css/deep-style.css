@@ -1,14 +1,20 @@
 /* importing fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald&family=Roboto:ital,wght@0,300;1,300&family=Ruwudu:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@500&family=Inter&family=Josefin+Sans:wght@500&family=PT+Serif:ital@1&family=Pacifico&family=Source+Code+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@200&family=Montserrat:ital,wght@0,300;1,200&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@200&display=swap');
 /* header settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
+    /* font-family: "Oswald", sans-serif; */
     
+}
+
+.logo{
+    font-size: 30px;
+    font-family: "Alex Brush";
+    /* color: #fff;  */
 }
   
 
@@ -334,26 +340,29 @@ section {
 
 .aboutindia1 {
     font-size: 24px;
-    /* text-decoration: underline; */
+    text-decoration: underline;
+    font-family: serif;
+    margin-top: 100px;
+}
+
+.aboutindia2 {
+    margin: 22px 0;
+    font-family: sans-serif;
     text-align: center;
 }
 
 .border5{
     width: 160px;
-    height: 5px;
+    height:5px;
     background: #6ab04c;
     margin: 26px auto;
-}
-
-.aboutindia2 {
-    margin: 20px 0;
-    font-size: 18px;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .celeb-button{
@@ -367,10 +376,14 @@ section {
     background-color: #ffffff;
     color: #000000;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s, transform 0.2s; 
+    background-color: #95c7ed;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
 }
 
 .readmore1 a {
@@ -378,7 +391,7 @@ section {
 }
 
 .readmore1:hover {
-    background-color: #4697d6;
+    background-color: #5ea4d8;
     transform: scale(1.05);
 }
 
