@@ -877,7 +877,7 @@ li:hover {
     scroll-snap-align: start;
     height: 342px;
     list-style: none;
-    background: #d9aaaa;
+    background: #d4d6ee;
     cursor: pointer;
     padding-bottom: 15px;
     flex-direction: column;
@@ -904,6 +904,8 @@ li:hover {
   .celebrity .withus span {
     color: #6A6D78;
     font-size: 1.31rem;
+    text-align: center;
+    padding: 0 10px;
   }
   
   @media screen and (max-width: 900px) {
