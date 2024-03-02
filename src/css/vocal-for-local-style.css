@@ -11,9 +11,13 @@ body {
     background-color: #f0f0f0;
 }
 
-.logo img{
-    width: auto;
-    height: 50px;
+.logo .brand img {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 55px;
+    width: 180px;
   }
 
 .banner img {
@@ -35,8 +39,8 @@ body {
 .grid-item {
     text-align: center;
     padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color:antiquewhite;
+    border: 1px solid darkcyan;
 }
 
 .grid-item img {
@@ -56,8 +60,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color:darkcyan;
+    color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +69,7 @@ header {
 }
 
 .logo .brand {
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;

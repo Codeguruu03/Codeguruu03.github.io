@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Login Form | CodingStella </title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
+<link rel="stylesheet" type="text/css" href="login.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <div class="login_box">
+    <form id="login-form" onsubmit="login()">
+    <div class="login-header">
+      <span>Login</span>
+    </div>
+
+    <div class="input_box">
+      <input type="text" id="email" class="input-field" required>
+      <label for="user" class="label">Email</label>
+      <i class="bx bx-user icon"></i>
+    </div>
+
+    <div class="input_box">
+      <input type="password" id="password" class="input-field" required>
+      <label for="pass" class="label">Password</label>
+      <i class="bx bx-lock-alt icon"></i>
+    </div>
+
+    <div class="remember-forgot">
+      <div class="remember-me">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+      </div>
+
+      <div class="forgot">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+
+    <div class="input_box">
+    <button id="submit">
+        <input type="submit"  class="input-submit" value="Login">
+    </button>
+    </div>
+
+    <div class="register">
+      <span>Don't have an account? <a href="#">Register</a></span>
+    </div>
+    </form>
+  </div>
+</div>
+<!-- partial -->
+  <script type="module" src="login.js" ></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+</body>
+</html>

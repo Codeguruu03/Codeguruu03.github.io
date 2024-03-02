@@ -5,39 +5,44 @@ body, h1, h2, p, img {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 header {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
-}
+} */
 
-h1 {
+/* h1 {
     color: #333;
-}
+} */
 
 .section {
     padding: 40px;
     text-align: center;
+    font-size: 70px;
+    
 }
 
-h2 {
-    color: #333;
+.section > h2 {
+    color:sienna;
     margin-bottom: 10px;
+    font-size: 70px;
+    text-align: center;
 }
 
-p {
-    color: #666;
-    line-height: 1.6;
+.section > p {
+    color:black;
+    font-size: 30px;
+    /* line-height: 1.6; */
 }
 
-img {
+ img {
     width: 80%;
     height: auto;
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 footer {
@@ -49,20 +54,23 @@ footer {
 /* Additional styling can be added as needed */
 
 header {
-    background-color: #333;
+    background-color:black;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    font-size: larger;
 }
 
 .logo .brand {
-    color: #fff;
-    text-decoration: none;
+    color:#fff;
+    text-decoration:none;
     font-size: 1.5em;
     font-weight: bold;
-}
+    height: 55px;
+    width: 180px;
+  }
 
 .navigation-items {
     list-style: none;

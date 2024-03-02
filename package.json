@@ -1,0 +1,16 @@
+{
+  "name": "codeguruu03.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.8.1",
+    "firebase-analytics": "^1.0.1",
+    "firebase-auth": "^0.1.2"
+  }
+}

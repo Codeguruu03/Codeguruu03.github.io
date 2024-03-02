@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('https://wallpapers.com/images/featured/sunflower-desktop-background-tryh2rnaa2my4knh.jpg');
+  background-image: url('https://t3.ftcdn.net/jpg/05/97/49/08/360_F_597490871_JhERmRVPR2o9dDBRKxYpvXbQzr5POTw1.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -50,16 +50,17 @@ section {
 }
 
 .section-header h2 {
-  color: #FFF;
+  color:black;
   font-weight: bold;
   font-size: 3em;
   margin-bottom: 20px;
   text-decoration: underline;
+  color: black;
 }
 
 .section-header p {
-  color: #FFF;
-  font-size: 19px;
+  color:black;
+  font-size: 22px;
   font-weight: 2px;
 }
 
@@ -97,19 +98,19 @@ section {
 }
 
 .contact-info-content h4 {
-  color: #fff;
+  color: darkblue;
   font-size: 1.4em;
   margin-bottom: 5px;
   text-decoration: underline;
 }
 
 .contact-info-content p {
-  color: #FFF;
-  font-size: 1.2em;
+  color:black;
+  font-size: 1.5em;
 }
 
 .contact-form {
-  background-color: #fff;
+  background-color:white;
   padding: 40px;
   width: 45%;
   padding-bottom: 20px;
@@ -149,12 +150,12 @@ section {
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: #666;
+  color:black;
 }
 
 .contact-form .input-box input:focus ~ span,
 .contact-form .input-box textarea:focus ~ span{
-  color: #e91e63;
+  color: #08ab49;
   font-size: 12px;
   transform: translateY(-20px);
 }
@@ -162,7 +163,6 @@ section {
 .contact-form .input-box input[type="submit"]
 {
   width: 100%;
-  background: #00bcd4;
   color: #FFF;
   border: none;
   cursor: pointer;
@@ -170,6 +170,7 @@ section {
   font-size: 18px;
   border: 1px solid #00bcd4;
   transition: 0.5s;
+  background: #00bcd4;
 }
 
 .contact-form .input-box input[type="submit"]:hover
