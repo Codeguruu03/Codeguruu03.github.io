@@ -340,22 +340,25 @@ section {
 }
 
 .aboutindia1 {
-    font-size: 24px;
+    font-size: 30px;
     /* text-decoration: underline; */
     font-family: serif;
     margin-top: 100px;
     text-align: center;
+    color:#276595;
 }
 
 .aboutindia2 {
     margin: 22px 0;
-    font-family: sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    font-size: 20px;
+    font-style:oblique  ;
 }
 
 .border5{
     width: 160px;
-    height:5px;
+    height:7px;
     background: #6ab04c;
     margin: 26px auto;
 }
@@ -364,7 +367,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    font-size: larger;
+    margin-bottom: 80px;
 }
 
 .celeb-button{
@@ -425,7 +429,7 @@ section {
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #be5555;
+    background: #138d56;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
@@ -433,8 +437,8 @@ section {
     z-index: 1;
 }
 
-/* .wrapper i:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+ /*.wrapper i:hover {
+    background-color: rgba(123, 14, 14, 0.7);
     transform: scale(1.1);
 } */
 
@@ -454,9 +458,9 @@ section {
     scroll-behavior: smooth;
     scrollbar-width: none;
     /* Other styles for the carousel */
-    background-color: #d6d2d2;
+    background-color:#276595;
     padding: 10px;
-    box-shadow: 0px 2px 6px 5px rgba(15, 0, 0, 0.1);
+    box-shadow: 0px 2px 6px 5px palegreen;
 }
 
 
@@ -621,6 +625,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: larger;
 }
 
 .popularpackages .packages {
@@ -631,13 +636,13 @@ section {
 
 .border1{
     width: 320px;
-  height: 5px;
+  height: 7px;
   background: #6ab04c;
   margin: 26px auto;
 }
 
 .popularpackages{
-    /* background-color: yellow; */
+    color:#276595; 
     padding: 85px 85px 85px 85px;
 }
 
@@ -645,18 +650,19 @@ section {
     /* text-decoration: underline; */
     font-size: 38px;
     text-align: center;
+    color:#276595
 }
 
 .border2{
     width: 390px;
-  height: 5px;
+  height: 7px;
   background: #6ab04c;
   margin: 26px auto;
 }
 
 .border3{
     width: 300px;
-  height: 5px;
+  height: 7px;
   background: #6ab04c;
   margin: 26px auto;
 }
@@ -773,7 +779,8 @@ section {
 .container-fluid.whysec {
     text-align: center;
     padding: 50px 0;
-    background-color: #fd3a3ad7;
+    background-color: #f9f9f9;
+
 }
 
 h2.text-center {
@@ -784,7 +791,7 @@ h2.text-center {
 
 .border4{
     width: 260px;
-  height: 5px;
+  height: 7px;
   background: #6ab04c;
   margin: 26px auto;
 }
@@ -801,9 +808,12 @@ ul.flex.flexWrap {
     width: calc(33.33% - 20px);
     margin: 10px;
     padding: 20px;
-    background-color: #fff;
+    background-color:blanchedalmond;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    font-size: larger;
+    color:#276595;
+
 }
 
 li:hover {
@@ -825,7 +835,7 @@ li:hover {
     display: inline-block;
     margin-top: 10px;
     padding: 5px 15px;
-    background-color: #ff9900;
+    background-color:orange;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -833,7 +843,7 @@ li:hover {
 }
 
 .read-more:hover {
-    background-color: #e68a00;
+    background-color:#276595;
 }
 
 .col-lg-12.text-center {
@@ -864,6 +874,7 @@ li:hover {
 
   .testimonials .inner h1{
     font-size: 38px;
+    color:#276595
   }
   .inner{
     max-width: 1200px;
@@ -874,7 +885,7 @@ li:hover {
   
   .border{
     width: 250px;
-    height: 5px;
+    height: 7px;
     background: #6ab04c;
     margin: 26px auto;
   } 
@@ -907,6 +918,9 @@ li:hover {
   .stars{
     color: #6ab04c;
     margin-bottom: 20px;
+  }
+  .blogs{
+    color:#276595
   }
   
   @media screen and (max-width:960px) {
@@ -1057,7 +1071,7 @@ ul {
   }
   .border6{
     width: 120px;
-    height:5px;
+    height:7px;
     background: #6ab04c;
     margin: 26px auto;
   }
