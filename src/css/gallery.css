@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #4B1717;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@ header {
     /* border: 1px solid #ccc; */
     text-align: center;
     list-style: none;
-    color:darkcyan;
+    color:rgb(6, 81, 81);
     font: size 90px;;
 }
 
