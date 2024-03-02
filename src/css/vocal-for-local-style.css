@@ -11,9 +11,13 @@ body {
     background-color: #f0f0f0;
 }
 
-.logo img{
-    width: auto;
-    height: 50px;
+.logo .brand img {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 55px;
+    width: 180px;
   }
 
 .banner img {
@@ -64,12 +68,6 @@ header {
     padding: 10px 20px;
 }
 
-.logo .brand {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
 .navigation-items {
     list-style: none;

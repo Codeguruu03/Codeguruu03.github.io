@@ -13,17 +13,13 @@
     padding: 10px 20px;
 }
 
-.logo .brand {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.navigation-items {
-    list-style: none;
-    display: flex;
-    
+.logo .brand img {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 55px;
+  width: 180px;
 }
 
 .navigation-items li {

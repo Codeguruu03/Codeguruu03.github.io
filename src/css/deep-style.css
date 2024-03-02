@@ -59,6 +59,7 @@ header .navigation .navigation-items a {
     color: #000000;
     font-size: 1.3em;
     font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     margin-left: 30px;
     transition: 0.3s ease;
@@ -772,7 +773,7 @@ section {
 .container-fluid.whysec {
     text-align: center;
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: #fd3a3ad7;
 }
 
 h2.text-center {
@@ -938,7 +939,7 @@ ul {
 }
 
 .footer {
-    background-color: #252323;
+    background-color: #78006E;
     padding: 70px 0;
 }
 
@@ -977,7 +978,7 @@ ul {
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #ffffff;
     display: block;
     transition: all 0.3s ease;
     padding: auto;
