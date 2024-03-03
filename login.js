@@ -1,5 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js'
+import {getAuth, signInWithEmailAndPassword}from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js'
 
 
 document.getElementById('login-form').addEventListener('submit', (event)=> {
@@ -19,9 +19,9 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const auth = getAuth(app);
 
-firebase.auth().onAuthStateChanged((user) => {
+auth.onAuthStateChanged((user) => {
   if (user) {
     window.location.assign('/deep-home.html')
   }
@@ -31,18 +31,17 @@ firebase.auth().onAuthStateChanged((user) => {
   })
 
 
-function login(){
+const login = async () => {
   const email = document.getElementById('email').value
   const password = document.getElementById('password').value
-  firebase.auth().signInWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    // Signed in
+  try {
+  const userCredential = await signInWithEmailAndPassword(auth, email, password)
+  if(userCredential){
     const user = userCredential.user;
     console.log("User signed in:", user)
-  })
-  .catch((error) => {
-    const errorCode = error.code;
+  }
+  } catch(error)  {
     const errorMessage = error.message;
     console.log(errorMessage)
-  });
+  }
 }
