@@ -1,38 +1,39 @@
 
-# Travel Buddy
+# 🚀 Travel Buddy
 
-### Welcome to Travel Buddy, your go-to platform for exploring the rich culture, heritage, and beauty of India!
+### Welcome to Travel Buddy, your go-to platform for exploring India's rich culture, heritage, and beauty!
 
 
-## Overview
+## 🌍 Overview
 
  Travel Buddy is a comprehensive website/mobile application designed to provide valuable information about various aspects of India, including its culture, history, tourist attractions, cuisine, customs, languages, festivals, and more. Whether you're a traveler planning a trip to India or simply curious about this vibrant country, Travel Buddy has everything you need to know.
 
 
 
 
-## Getting Started 
+## 🛠️ Getting Started 
 
  Clone the repository
 
- `git clone https://github.com/yourusername/discover-india.git `
+ ```
+ git clone https://github.com/yourusername/discover-india.git
+```
 
 Install dependencies:
 
-`npm install`
-
-`npm install firebase`
-
-`npm install firebase-auth`
+```bash
+npm install
+npm install firebase
+npm install firebase-auth
+```
 
 Start the development server:
+```
+npm start
+```
 
-`npm start`
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-## Programming Languages Used:- 
+## 💻 Programming Languages Used:- 
 
 ![HTML](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -45,19 +46,14 @@ Start the development server:
 
 
 
-## Collaborators
+## 👥 Collaborators
 
-Naman Goyal
-
-Shubhangi Nayan
-
-Aditya Hanji
-
-Vyom Patel
-
-
-
-
+[Deepesh Patil](https://github.com/deepesh611) <br>
+[Krish Koria](https://github.com/KrishKoria) <br>
+[Naman Goyal](https://github.com/Codeguruu03) <br>
+[Shubhangi Nayan](https://github.com/shubhangi-iiitp) <br>
+[Aditya Hanji](https://github.com/aditya-h-09) <br>
+[Vyom Patel](#) <br>
 
 
 
